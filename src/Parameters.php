@@ -16,7 +16,9 @@ namespace Diglin\Swisspost;
  */
 class Parameters
 {
-    protected $wsdl = 'https://wsbc.post.ch/wsbc/barcode/v2_4?wsdl';
+    const WSDL_URL = 'https://wsbc.post.ch/wsbc/barcode/v2_4?wsdl';
+
+    protected $wsdl = self::WSDL_URL;
     protected $location;
     protected $login;
     protected $password;
