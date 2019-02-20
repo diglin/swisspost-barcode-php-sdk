@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\AdditionalData" namespace="Diglin\Swisspost\StructType" name="AdditionalData" abstract="false" final="false" start="13" end="126">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="AdditionalData.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/AdditionalData.php" size="4464" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="cc4a9967854a00a4451c0abddb64267ee1d7eca6" relative="StructType/AdditionalData.php"/>
+  <docblock>
+    <description compact="This class stands for AdditionalData StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Type" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The Type Meta informations extracted from the WSDL - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Value" visibility="public" static="false" line="32">
+    <docblock>
+      <description compact="The Value Meta informations extracted from the WSDL - maxLength: 50 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="40" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for AdditionalData"/>
+      <uses value="AdditionalData::setType()"/>
+      <uses value="AdditionalData::setValue()"/>
+      <param type="string" variable="$type"/>
+      <param type="string" variable="$value"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getType" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Type value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setType" start="59" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Type value"/>
+      <param type="string" variable="$type"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </return>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="61"/>
+      <comment value="validation for constraint: pattern" line="65"/>
+      <comment value="validation for constraint: string" line="69"/>
+    </inline>
+  </method>
+  <method name="getValue" start="80" end="83" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Value value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setValue" start="89" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Value value"/>
+      <param type="string" variable="$value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="91"/>
+      <comment value="validation for constraint: pattern" line="95"/>
+      <comment value="validation for constraint: string" line="99"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="114" end="117" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="122" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

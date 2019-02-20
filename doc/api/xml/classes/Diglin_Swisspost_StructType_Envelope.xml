@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Envelope" namespace="Diglin\Swisspost\StructType" name="Envelope" abstract="false" final="false" start="13" end="120">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Envelope.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Envelope.php" size="3733" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="c668ea292b68210312ffa3fc8f392425064f0bb8" relative="StructType/Envelope.php"/>
+  <docblock>
+    <description compact="This class stands for Envelope StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="LabelDefinition" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The LabelDefinition"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelDefinition" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Data" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The Data"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\Data" namespace="\Diglin\Swisspost\StructType" name="Data"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="BarcodeDefinition" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The BarcodeDefinition"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="39" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Envelope"/>
+      <uses value="Envelope::setLabelDefinition()"/>
+      <uses value="Envelope::setData()"/>
+      <uses value="Envelope::setBarcodeDefinition()"/>
+      <param type="object" variable="$labelDefinition">
+        <type full="\Diglin\Swisspost\StructType\LabelDefinition" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition"/>
+      </param>
+      <param type="object" variable="$data">
+        <type full="\Diglin\Swisspost\StructType\Data" namespace="\Diglin\Swisspost\StructType" name="Data"/>
+      </param>
+      <param type="object" variable="$barcodeDefinition">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition"/>
+      </param>
+    </docblock>
+    <parameter name="labelDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelDefinition" namespace="Diglin\Swisspost\StructType" name="LabelDefinition"/>
+    </parameter>
+    <parameter name="data" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Data" namespace="Diglin\Swisspost\StructType" name="Data"/>
+    </parameter>
+    <parameter name="barcodeDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition"/>
+    </parameter>
+  </constructor>
+  <method name="getLabelDefinition" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LabelDefinition value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelDefinition|null" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLabelDefinition" start="59" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LabelDefinition value"/>
+      <param type="object" variable="$labelDefinition">
+        <type full="\Diglin\Swisspost\StructType\LabelDefinition" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Envelope" namespace="\Diglin\Swisspost\StructType" name="Envelope"/>
+      </return>
+    </docblock>
+    <parameter name="labelDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelDefinition" namespace="Diglin\Swisspost\StructType" name="LabelDefinition"/>
+    </parameter>
+  </method>
+  <method name="getData" start="68" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Data value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Data|null" namespace="\Diglin\Swisspost\StructType" name="Data|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setData" start="77" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Data value"/>
+      <param type="object" variable="$data">
+        <type full="\Diglin\Swisspost\StructType\Data" namespace="\Diglin\Swisspost\StructType" name="Data"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Envelope" namespace="\Diglin\Swisspost\StructType" name="Envelope"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Data" namespace="Diglin\Swisspost\StructType" name="Data"/>
+    </parameter>
+  </method>
+  <method name="getBarcodeDefinition" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get BarcodeDefinition value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition|null" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setBarcodeDefinition" start="95" end="99" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set BarcodeDefinition value"/>
+      <param type="object" variable="$barcodeDefinition">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Envelope" namespace="\Diglin\Swisspost\StructType" name="Envelope"/>
+      </return>
+    </docblock>
+    <parameter name="barcodeDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\SingleBarcodesResponseDefinition" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesResponseDefinition"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="108" end="111" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Envelope" namespace="\Diglin\Swisspost\StructType" name="Envelope"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="116" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

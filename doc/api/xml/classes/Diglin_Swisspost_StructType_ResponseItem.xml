@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ResponseItem" namespace="Diglin\Swisspost\StructType" name="ResponseItem" abstract="false" final="false" start="13" end="141">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ResponseItem.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ResponseItem.php" size="4573" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="585ce54b4541146c3f5e314cb98d80f874d498a7" relative="StructType/ResponseItem.php"/>
+  <docblock>
+    <description compact="This class stands for ResponseItem StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ItemID" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The ItemID Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Unique identifier for a specific item defined by the consumer. | Excludes unsupported characters.">- maxLength: 200
+- pattern: ([^&gt;&lt;?"|:\\/*])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Errors" visibility="public" static="false" line="31">
+    <docblock>
+      <description compact="The Errors Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Warnings" visibility="public" static="false" line="38">
+    <docblock>
+      <description compact="The Warnings Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="48" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ResponseItem"/>
+      <uses value="ResponseItem::setItemID()"/>
+      <uses value="ResponseItem::setErrors()"/>
+      <uses value="ResponseItem::setWarnings()"/>
+      <param type="string" variable="$itemID"/>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <param type="object" variable="$warnings">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </param>
+    </docblock>
+    <parameter name="itemID" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+    <parameter name="warnings" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\WarningsType" namespace="Diglin\Swisspost\StructType" name="WarningsType"/>
+    </parameter>
+  </constructor>
+  <method name="getItemID" start="59" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ItemID value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setItemID" start="68" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ItemID value"/>
+      <param type="string" variable="$itemID"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ResponseItem" namespace="\Diglin\Swisspost\StructType" name="ResponseItem"/>
+      </return>
+    </docblock>
+    <parameter name="itemID" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="70"/>
+      <comment value="validation for constraint: pattern" line="74"/>
+      <comment value="validation for constraint: string" line="78"/>
+    </inline>
+  </method>
+  <method name="getErrors" start="89" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Errors value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType|null" namespace="\Diglin\Swisspost\StructType" name="ErrorsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setErrors" start="98" end="102" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Errors value"/>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ResponseItem" namespace="\Diglin\Swisspost\StructType" name="ResponseItem"/>
+      </return>
+    </docblock>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </method>
+  <method name="getWarnings" start="107" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Warnings value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\WarningsType|null" namespace="\Diglin\Swisspost\StructType" name="WarningsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setWarnings" start="116" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Warnings value"/>
+      <param type="object" variable="$warnings">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ResponseItem" namespace="\Diglin\Swisspost\StructType" name="ResponseItem"/>
+      </return>
+    </docblock>
+    <parameter name="warnings" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\WarningsType" namespace="Diglin\Swisspost\StructType" name="WarningsType"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="129" end="132" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ResponseItem" namespace="\Diglin\Swisspost\StructType" name="ResponseItem"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="137" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+  <extenders>
+    <extender full="Diglin\Swisspost\StructType\SingleBarcodesResponseItem" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesResponseItem"/>
+    <extender full="Diglin\Swisspost\StructType\LabelResponseItem" namespace="Diglin\Swisspost\StructType" name="LabelResponseItem"/>
+  </extenders>
+</class>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="Diglin\Swisspost\StructType" name="GenerateLabelCustomer" abstract="false" final="false" start="13" end="597">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="GenerateLabelCustomer.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateLabelCustomer.php" size="23627" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="199f8e234d5dbde374b077d286a55f787f58d6af" relative="StructType/GenerateLabelCustomer.php"/>
+  <docblock>
+    <description compact="This class stands for GenerateLabelCustomer StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Name1" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The Name1 Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Name2" visibility="public" static="false" line="33">
+    <docblock>
+      <description compact="The Name2 Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Street" visibility="public" static="false" line="42">
+    <docblock>
+      <description compact="The Street Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="POBox" visibility="public" static="false" line="52">
+    <docblock>
+      <description compact="The POBox Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ZIP" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="The ZIP Meta informations extracted from the WSDL - maxLength: 10 - totalDigits: 6 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="City" visibility="public" static="false" line="71">
+    <docblock>
+      <description compact="The City Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Country" visibility="public" static="false" line="80">
+    <docblock>
+      <description compact="The Country Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The ISO country code.">- pattern: [a-zA-Z]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Logo" visibility="public" static="false" line="87">
+    <docblock>
+      <description compact="The Logo Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LogoFormat" visibility="public" static="false" line="97">
+    <docblock>
+      <description compact="The LogoFormat Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 3 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LogoRotation" visibility="public" static="false" line="104">
+    <docblock>
+      <description compact="The LogoRotation Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LogoAspectRatio" visibility="public" static="false" line="111">
+    <docblock>
+      <description compact="The LogoAspectRatio Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LogoHorizontalAlign" visibility="public" static="false" line="118">
+    <docblock>
+      <description compact="The LogoHorizontalAlign Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LogoVerticalAlign" visibility="public" static="false" line="125">
+    <docblock>
+      <description compact="The LogoVerticalAlign Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="DomicilePostOffice" visibility="public" static="false" line="135">
+    <docblock>
+      <description compact="The DomicilePostOffice Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="167" end="184" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for GenerateLabelCustomer"/>
+      <uses value="GenerateLabelCustomer::setName1()"/>
+      <uses value="GenerateLabelCustomer::setName2()"/>
+      <uses value="GenerateLabelCustomer::setStreet()"/>
+      <uses value="GenerateLabelCustomer::setPOBox()"/>
+      <uses value="GenerateLabelCustomer::setZIP()"/>
+      <uses value="GenerateLabelCustomer::setCity()"/>
+      <uses value="GenerateLabelCustomer::setCountry()"/>
+      <uses value="GenerateLabelCustomer::setLogo()"/>
+      <uses value="GenerateLabelCustomer::setLogoFormat()"/>
+      <uses value="GenerateLabelCustomer::setLogoRotation()"/>
+      <uses value="GenerateLabelCustomer::setLogoAspectRatio()"/>
+      <uses value="GenerateLabelCustomer::setLogoHorizontalAlign()"/>
+      <uses value="GenerateLabelCustomer::setLogoVerticalAlign()"/>
+      <uses value="GenerateLabelCustomer::setDomicilePostOffice()"/>
+      <param type="string" variable="$name1"/>
+      <param type="string" variable="$name2"/>
+      <param type="string" variable="$street"/>
+      <param type="string" variable="$pOBox"/>
+      <param type="string" variable="$zIP"/>
+      <param type="string" variable="$city"/>
+      <param type="string" variable="$country"/>
+      <param type="string" variable="$logo"/>
+      <param type="string" variable="$logoFormat"/>
+      <param type="string" variable="$logoRotation"/>
+      <param type="string" variable="$logoAspectRatio"/>
+      <param type="string" variable="$logoHorizontalAlign"/>
+      <param type="string" variable="$logoVerticalAlign"/>
+      <param type="string" variable="$domicilePostOffice"/>
+    </docblock>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logo" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logoFormat" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logoRotation" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logoAspectRatio" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logoHorizontalAlign" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="logoVerticalAlign" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="domicilePostOffice" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getName1" start="189" end="192" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name1 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName1" start="198" end="214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name1 value"/>
+      <param type="string" variable="$name1"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="200"/>
+      <comment value="validation for constraint: pattern" line="204"/>
+      <comment value="validation for constraint: string" line="208"/>
+    </inline>
+  </method>
+  <method name="getName2" start="219" end="222" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name2 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName2" start="228" end="244" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name2 value"/>
+      <param type="string" variable="$name2"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="230"/>
+      <comment value="validation for constraint: pattern" line="234"/>
+      <comment value="validation for constraint: string" line="238"/>
+    </inline>
+  </method>
+  <method name="getStreet" start="249" end="252" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Street value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setStreet" start="258" end="274" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Street value"/>
+      <param type="string" variable="$street"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="260"/>
+      <comment value="validation for constraint: pattern" line="264"/>
+      <comment value="validation for constraint: string" line="268"/>
+    </inline>
+  </method>
+  <method name="getPOBox" start="279" end="282" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get POBox value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPOBox" start="288" end="304" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set POBox value"/>
+      <param type="string" variable="$pOBox"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="290"/>
+      <comment value="validation for constraint: pattern" line="294"/>
+      <comment value="validation for constraint: string" line="298"/>
+    </inline>
+  </method>
+  <method name="getZIP" start="309" end="312" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ZIP value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setZIP" start="318" end="338" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ZIP value"/>
+      <param type="string" variable="$zIP"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="320"/>
+      <comment value="validation for constraint: totalDigits" line="324"/>
+      <comment value="validation for constraint: pattern" line="328"/>
+      <comment value="validation for constraint: string" line="332"/>
+    </inline>
+  </method>
+  <method name="getCity" start="343" end="346" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get City value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCity" start="352" end="368" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set City value"/>
+      <param type="string" variable="$city"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="354"/>
+      <comment value="validation for constraint: pattern" line="358"/>
+      <comment value="validation for constraint: string" line="362"/>
+    </inline>
+  </method>
+  <method name="getCountry" start="373" end="376" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Country value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCountry" start="382" end="394" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Country value"/>
+      <param type="string" variable="$country"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="384"/>
+      <comment value="validation for constraint: string" line="388"/>
+    </inline>
+  </method>
+  <method name="getLogo" start="399" end="402" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Logo value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogo" start="408" end="416" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Logo value"/>
+      <param type="string" variable="$logo"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logo" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: string" line="410"/>
+    </inline>
+  </method>
+  <method name="getLogoFormat" start="421" end="424" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LogoFormat value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogoFormat" start="430" end="446" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LogoFormat value"/>
+      <param type="string" variable="$logoFormat"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logoFormat" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="432"/>
+      <comment value="validation for constraint: pattern" line="436"/>
+      <comment value="validation for constraint: string" line="440"/>
+    </inline>
+  </method>
+  <method name="getLogoRotation" start="451" end="454" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LogoRotation value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogoRotation" start="463" end="471" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LogoRotation value"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoRotation::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoRotation::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$logoRotation"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logoRotation" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="465"/>
+    </inline>
+  </method>
+  <method name="getLogoAspectRatio" start="476" end="479" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LogoAspectRatio value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogoAspectRatio" start="488" end="496" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LogoAspectRatio value"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoAspectRatio::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoAspectRatio::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$logoAspectRatio"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logoAspectRatio" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="490"/>
+    </inline>
+  </method>
+  <method name="getLogoHorizontalAlign" start="501" end="504" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LogoHorizontalAlign value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogoHorizontalAlign" start="513" end="521" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LogoHorizontalAlign value"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoHorizontalAlign::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoHorizontalAlign::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$logoHorizontalAlign"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logoHorizontalAlign" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="515"/>
+    </inline>
+  </method>
+  <method name="getLogoVerticalAlign" start="526" end="529" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LogoVerticalAlign value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLogoVerticalAlign" start="538" end="546" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LogoVerticalAlign value"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoVerticalAlign::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\LogoVerticalAlign::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$logoVerticalAlign"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="logoVerticalAlign" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="540"/>
+    </inline>
+  </method>
+  <method name="getDomicilePostOffice" start="551" end="554" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DomicilePostOffice value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDomicilePostOffice" start="560" end="576" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DomicilePostOffice value"/>
+      <param type="string" variable="$domicilePostOffice"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="domicilePostOffice" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="562"/>
+      <comment value="validation for constraint: pattern" line="566"/>
+      <comment value="validation for constraint: string" line="570"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="585" end="588" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelCustomer" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="593" end="596" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

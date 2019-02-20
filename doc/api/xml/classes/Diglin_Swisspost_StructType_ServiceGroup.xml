@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ServiceGroup" namespace="Diglin\Swisspost\StructType" name="ServiceGroup" abstract="false" final="false" start="15" end="111">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ServiceGroup.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ServiceGroup.php" size="3563" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="8065c41041bcf2e9d26f38c4c6a27d027109edf5" relative="StructType/ServiceGroup.php"/>
+  <docblock>
+    <description compact="This class stands for ServiceGroup StructType Meta informations extracted from the WSDL - documentation: Represents a Service Group."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ServiceGroupID" visibility="public" static="false" line="21">
+    <docblock>
+      <description compact="The ServiceGroupID"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="Description" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The Description Meta informations extracted from the WSDL - documentation: A common type for descriptions.">- maxLength: 255</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="37" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ServiceGroup"/>
+      <uses value="ServiceGroup::setServiceGroupID()"/>
+      <uses value="ServiceGroup::setDescription()"/>
+      <param type="int" variable="$serviceGroupID"/>
+      <param type="string" variable="$description"/>
+    </docblock>
+    <parameter name="serviceGroupID" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getServiceGroupID" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ServiceGroupID value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setServiceGroupID" start="56" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ServiceGroupID value"/>
+      <param type="int" variable="$serviceGroupID"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </return>
+    </docblock>
+    <parameter name="serviceGroupID" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="58"/>
+    </inline>
+  </method>
+  <method name="getDescription" start="69" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Description value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDescription" start="78" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Description value"/>
+      <param type="string" variable="$description"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </return>
+    </docblock>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="80"/>
+      <comment value="validation for constraint: string" line="84"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="99" end="102" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="107" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Dimensions" namespace="Diglin\Swisspost\StructType" name="Dimensions" abstract="false" final="false" start="15" end="81">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Dimensions.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Dimensions.php" size="2404" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="33f8b4e4088ec2abbdef501ed8f7e0ee4e9e0f83" relative="StructType/Dimensions.php"/>
+  <docblock>
+    <description compact="This class stands for Dimensions StructType Meta informations extracted from the WSDL - documentation: Represents the Dimensions attribute of the DataTransfer."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Weight" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The Weight Meta informations extracted from the WSDL - documentation: Weight in gramms.">- totalDigits: 5</description>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Dimensions"/>
+      <uses value="Dimensions::setWeight()"/>
+      <param type="int" variable="$weight"/>
+    </docblock>
+    <parameter name="weight" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getWeight" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Weight value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setWeight" start="48" end="60" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Weight value"/>
+      <param type="int" variable="$weight"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Dimensions" namespace="\Diglin\Swisspost\StructType" name="Dimensions"/>
+      </return>
+    </docblock>
+    <parameter name="weight" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="50"/>
+      <comment value="validation for constraint: int" line="54"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="69" end="72" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Dimensions" namespace="\Diglin\Swisspost\StructType" name="Dimensions"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="77" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\ClassMap" namespace="Diglin\Swisspost" name="ClassMap" abstract="false" final="false" start="9" end="86">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src" file="ClassMap.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/ClassMap.php" size="6364" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="391b17b8b9cdee31965c7f609b0534290216f4a5" relative="ClassMap.php"/>
+  <docblock>
+    <description compact="Class which returns the class map definition"/>
+    <package/>
+  </docblock>
+  <method name="get" start="16" end="85" abstract="false" final="true" static="true" visibility="public">
+    <docblock>
+      <description compact="Returns the mapping between the WSDL Structs and generated Structs' classes This array is sent to the \SoapClient when calling the WS"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\string" namespace="Diglin\Swisspost" name="string"/>
+      </return>
+    </docblock>
+  </method>
+</class>

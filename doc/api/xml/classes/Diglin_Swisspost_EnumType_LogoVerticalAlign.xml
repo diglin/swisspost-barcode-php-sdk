@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\LogoVerticalAlign" namespace="Diglin\Swisspost\EnumType" name="LogoVerticalAlign" abstract="false" final="false" start="13" end="56">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="LogoVerticalAlign.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/LogoVerticalAlign.php" size="1249" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="29ed5804293583627f243d5ab3a9ecc462fe64af" relative="EnumType/LogoVerticalAlign.php"/>
+  <docblock>
+    <description compact="This class stands for LogoVerticalAlign EnumType Meta informations extracted from the WSDL - documentation: Default value is TOP."/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_TOP" value="'TOP'">
+    <docblock>
+      <description compact="Constant for value 'TOP'"/>
+      <return description="'TOP'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_MIDDLE" value="'MIDDLE'">
+    <docblock>
+      <description compact="Constant for value 'MIDDLE'"/>
+      <return description="'MIDDLE'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="31" end="34" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="41" end="47" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_TOP"/>
+      <uses value="self::VALUE_MIDDLE"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="52" end="55" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

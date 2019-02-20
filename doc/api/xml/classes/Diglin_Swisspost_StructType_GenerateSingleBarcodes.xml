@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="Diglin\Swisspost\StructType" name="GenerateSingleBarcodes" abstract="false" final="false" start="13" end="101">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="GenerateSingleBarcodes.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateSingleBarcodes.php" size="3136" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="a0308f74bde73e8018bf982082c68b2b219ec052" relative="StructType/GenerateSingleBarcodes.php"/>
+  <docblock>
+    <description compact="This class stands for GenerateSingleBarcodes StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Language" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The Language"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Envelope" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The Envelope"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="32" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for GenerateSingleBarcodes"/>
+      <uses value="GenerateSingleBarcodes::setLanguage()"/>
+      <uses value="GenerateSingleBarcodes::setEnvelope()"/>
+      <param type="string" variable="$language"/>
+      <param type="object" variable="$envelope">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope"/>
+      </param>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="envelope" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope" namespace="Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope"/>
+    </parameter>
+  </constructor>
+  <method name="getLanguage" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Language value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLanguage" start="54" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Language value"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodes"/>
+      </return>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="56"/>
+    </inline>
+  </method>
+  <method name="getEnvelope" start="67" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Envelope value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope|null" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setEnvelope" start="76" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Envelope value"/>
+      <param type="object" variable="$envelope">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodes"/>
+      </return>
+    </docblock>
+    <parameter name="envelope" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateSingleBarcodesEnvelope" namespace="Diglin\Swisspost\StructType" name="GenerateSingleBarcodesEnvelope"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="89" end="92" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodes"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="97" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

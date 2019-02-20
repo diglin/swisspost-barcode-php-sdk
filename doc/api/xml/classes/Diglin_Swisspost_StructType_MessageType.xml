@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\MessageType" namespace="Diglin\Swisspost\StructType" name="MessageType" abstract="false" final="false" start="15" end="118">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="MessageType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/MessageType.php" size="3910" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="e545c7f74ebc16cb501f8fd0e16b0e0b8ce6f91a" relative="StructType/MessageType.php"/>
+  <docblock>
+    <description compact="This class stands for MessageType StructType Meta informations extracted from the WSDL - documentation: Represents a business error or warning. Does not include technical errors, those are handled by SOAP faults."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Code" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The Code Meta informations extracted from the WSDL - documentation: Five digit error/warning code. Error codes starts with a &quot;E&quot; and warning codes with a &quot;W&quot;.">- pattern: [W,E]{1}[0-9]{4}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Message" visibility="public" static="false" line="32">
+    <docblock>
+      <description compact="The Message Meta informations extracted from the WSDL - documentation: Descriptive text in user's language for the occurred business warning/error.">- maxLength: 500</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="40" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for MessageType"/>
+      <uses value="MessageType::setCode()"/>
+      <uses value="MessageType::setMessage()"/>
+      <param type="string" variable="$code"/>
+      <param type="string" variable="$message"/>
+    </docblock>
+    <parameter name="code" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="message" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getCode" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Code value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCode" start="59" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Code value"/>
+      <param type="string" variable="$code"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </return>
+    </docblock>
+    <parameter name="code" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="61"/>
+      <comment value="validation for constraint: string" line="65"/>
+    </inline>
+  </method>
+  <method name="getMessage" start="76" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Message value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMessage" start="85" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Message value"/>
+      <param type="string" variable="$message"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </return>
+    </docblock>
+    <parameter name="message" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="87"/>
+      <comment value="validation for constraint: string" line="91"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="106" end="109" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="114" end="117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

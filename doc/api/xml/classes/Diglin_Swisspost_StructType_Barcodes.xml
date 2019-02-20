@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Barcodes" namespace="Diglin\Swisspost\StructType" name="Barcodes" abstract="false" final="false" start="13" end="92">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Barcodes.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Barcodes.php" size="2712" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="58bd63a7d8bb8bf6519806819d5f67954dcd3c2a" relative="StructType/Barcodes.php"/>
+  <docblock>
+    <description compact="This class stands for Barcodes StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Barcode" visibility="public" static="false" line="21">
+    <docblock>
+      <description compact="The Barcode Meta informations extracted from the WSDL - maxOccurs: unbounded"/>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="27" end="31" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Barcodes"/>
+      <uses value="Barcodes::setBarcode()"/>
+      <param type="array" variable="$barcode" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+    </docblock>
+    <parameter name="barcode" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getBarcode" start="36" end="39" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Barcode value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string[]|nu" namespace="Diglin\Swisspost\StructType" name="string[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setBarcode" start="46" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Barcode value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$barcode" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Barcodes" namespace="\Diglin\Swisspost\StructType" name="Barcodes"/>
+      </return>
+    </docblock>
+    <parameter name="barcode" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToBarcode" start="63" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to Barcode value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Barcodes" namespace="\Diglin\Swisspost\StructType" name="Barcodes"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: itemType" line="65"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="80" end="83" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Barcodes" namespace="\Diglin\Swisspost\StructType" name="Barcodes"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="88" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

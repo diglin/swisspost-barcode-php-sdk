@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="Diglin\Swisspost\StructType" name="LabelLayoutResponse" abstract="false" final="false" start="13" end="169">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="LabelLayoutResponse.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/LabelLayoutResponse.php" size="5506" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1be3e1a965e131b2e5e0a93214bc99be1366bb06" relative="StructType/LabelLayoutResponse.php"/>
+  <docblock>
+    <description compact="This class stands for LabelLayoutResponse StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="LabelLayout" visibility="public" static="false" line="22">
+    <docblock>
+      <description compact="The LabelLayout Meta informations extracted from the WSDL - documentation: Defines valid layouts.">- pattern: [a-zA-Z,0-9]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="MaxServices" visibility="public" static="false" line="27">
+    <docblock>
+      <description compact="The MaxServices"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="MaxDeliveryInstructions" visibility="public" static="false" line="32">
+    <docblock>
+      <description compact="The MaxDeliveryInstructions"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="FreeTextAllowed" visibility="public" static="false" line="37">
+    <docblock>
+      <description compact="The FreeTextAllowed"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="49" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for LabelLayoutResponse"/>
+      <uses value="LabelLayoutResponse::setLabelLayout()"/>
+      <uses value="LabelLayoutResponse::setMaxServices()"/>
+      <uses value="LabelLayoutResponse::setMaxDeliveryInstructions()"/>
+      <uses value="LabelLayoutResponse::setFreeTextAllowed()"/>
+      <param type="string" variable="$labelLayout"/>
+      <param type="int" variable="$maxServices"/>
+      <param type="int" variable="$maxDeliveryInstructions"/>
+      <param type="object" variable="$freeTextAllowed">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="labelLayout" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="maxServices" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="maxDeliveryInstructions" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="freeTextAllowed" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getLabelLayout" start="61" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LabelLayout value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLabelLayout" start="70" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LabelLayout value"/>
+      <param type="string" variable="$labelLayout"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="\Diglin\Swisspost\StructType" name="LabelLayoutResponse"/>
+      </return>
+    </docblock>
+    <parameter name="labelLayout" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="72"/>
+      <comment value="validation for constraint: string" line="76"/>
+    </inline>
+  </method>
+  <method name="getMaxServices" start="87" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get MaxServices value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMaxServices" start="96" end="104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set MaxServices value"/>
+      <param type="int" variable="$maxServices"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="\Diglin\Swisspost\StructType" name="LabelLayoutResponse"/>
+      </return>
+    </docblock>
+    <parameter name="maxServices" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="98"/>
+    </inline>
+  </method>
+  <method name="getMaxDeliveryInstructions" start="109" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get MaxDeliveryInstructions value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMaxDeliveryInstructions" start="118" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set MaxDeliveryInstructions value"/>
+      <param type="int" variable="$maxDeliveryInstructions"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="\Diglin\Swisspost\StructType" name="LabelLayoutResponse"/>
+      </return>
+    </docblock>
+    <parameter name="maxDeliveryInstructions" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="120"/>
+    </inline>
+  </method>
+  <method name="getFreeTextAllowed" start="131" end="134" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FreeTextAllowed value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFreeTextAllowed" start="140" end="148" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FreeTextAllowed value"/>
+      <param type="object" variable="$freeTextAllowed">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="\Diglin\Swisspost\StructType" name="LabelLayoutResponse"/>
+      </return>
+    </docblock>
+    <parameter name="freeTextAllowed" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="142"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="157" end="160" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelLayoutResponse" namespace="\Diglin\Swisspost\StructType" name="LabelLayoutResponse"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="165" end="168" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

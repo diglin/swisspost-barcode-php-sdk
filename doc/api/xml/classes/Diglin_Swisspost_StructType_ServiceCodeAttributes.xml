@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="Diglin\Swisspost\StructType" name="ServiceCodeAttributes" abstract="false" final="false" start="13" end="421">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ServiceCodeAttributes.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ServiceCodeAttributes.php" size="15162" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="7cae209d27655d6ce8d244903406ad2d43509e37" relative="StructType/ServiceCodeAttributes.php"/>
+  <docblock>
+    <description compact="This class stands for ServiceCodeAttributes StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="PRZL" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The PRZL Meta informations extracted from the WSDL - maxOccurs: unbounded - minOccurs: 1 - documentation: Identifies a PRZL.">- pattern: [a-zA-Z,0-9]{1,10}</description>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="FreeText" visibility="public" static="false" line="34">
+    <docblock>
+      <description compact="The FreeText Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 34 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="DeliveryDate" visibility="public" static="false" line="41">
+    <docblock>
+      <description compact="The DeliveryDate Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ParcelNo" visibility="public" static="false" line="50">
+    <docblock>
+      <description compact="The ParcelNo Meta informations extracted from the WSDL - minOccurs: 0 - maxInclusive: 99 - minInclusive: 0"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="ParcelTotal" visibility="public" static="false" line="59">
+    <docblock>
+      <description compact="The ParcelTotal Meta informations extracted from the WSDL - minOccurs: 0 - maxInclusive: 99 - minInclusive: 0"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="DeliveryPlace" visibility="public" static="false" line="69">
+    <docblock>
+      <description compact="The DeliveryPlace Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ProClima" visibility="public" static="false" line="76">
+    <docblock>
+      <description compact="The ProClima Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="ReturnInfo" visibility="public" static="false" line="83">
+    <docblock>
+      <description compact="The ReturnInfo Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Dimensions" visibility="public" static="false" line="90">
+    <docblock>
+      <description compact="The Dimensions Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\Dimensions" namespace="\Diglin\Swisspost\StructType" name="Dimensions"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="UNNumbers" visibility="public" static="false" line="97">
+    <docblock>
+      <description compact="The UNNumbers Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="121" end="134" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ServiceCodeAttributes"/>
+      <uses value="ServiceCodeAttributes::setPRZL()"/>
+      <uses value="ServiceCodeAttributes::setFreeText()"/>
+      <uses value="ServiceCodeAttributes::setDeliveryDate()"/>
+      <uses value="ServiceCodeAttributes::setParcelNo()"/>
+      <uses value="ServiceCodeAttributes::setParcelTotal()"/>
+      <uses value="ServiceCodeAttributes::setDeliveryPlace()"/>
+      <uses value="ServiceCodeAttributes::setProClima()"/>
+      <uses value="ServiceCodeAttributes::setReturnInfo()"/>
+      <uses value="ServiceCodeAttributes::setDimensions()"/>
+      <uses value="ServiceCodeAttributes::setUNNumbers()"/>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <param type="string" variable="$freeText"/>
+      <param type="string" variable="$deliveryDate"/>
+      <param type="int" variable="$parcelNo"/>
+      <param type="int" variable="$parcelTotal"/>
+      <param type="string" variable="$deliveryPlace"/>
+      <param type="object" variable="$proClima">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="object" variable="$returnInfo">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </param>
+      <param type="object" variable="$dimensions">
+        <type full="\Diglin\Swisspost\StructType\Dimensions" namespace="\Diglin\Swisspost\StructType" name="Dimensions"/>
+      </param>
+      <param type="object" variable="$uNNumbers">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </param>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+    <parameter name="freeText" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="deliveryDate" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="parcelNo" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="parcelTotal" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="deliveryPlace" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="proClima" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="returnInfo" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ReturnInfoType" namespace="Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+    </parameter>
+    <parameter name="dimensions" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Dimensions" namespace="Diglin\Swisspost\StructType" name="Dimensions"/>
+    </parameter>
+    <parameter name="uNNumbers" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\UNNumbers" namespace="Diglin\Swisspost\StructType" name="UNNumbers"/>
+    </parameter>
+  </constructor>
+  <method name="getPRZL" start="139" end="142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PRZL value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPRZL" start="149" end="163" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="151"/>
+    </inline>
+  </method>
+  <method name="addToPRZL" start="170" end="182" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="172"/>
+      <comment value="validation for constraint: itemType" line="176"/>
+    </inline>
+  </method>
+  <method name="getFreeText" start="187" end="190" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FreeText value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFreeText" start="196" end="212" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FreeText value"/>
+      <param type="string" variable="$freeText"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="freeText" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="198"/>
+      <comment value="validation for constraint: pattern" line="202"/>
+      <comment value="validation for constraint: string" line="206"/>
+    </inline>
+  </method>
+  <method name="getDeliveryDate" start="217" end="220" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DeliveryDate value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDeliveryDate" start="226" end="234" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DeliveryDate value"/>
+      <param type="string" variable="$deliveryDate"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="deliveryDate" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: string" line="228"/>
+    </inline>
+  </method>
+  <method name="getParcelNo" start="239" end="242" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ParcelNo value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setParcelNo" start="248" end="264" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ParcelNo value"/>
+      <param type="int" variable="$parcelNo"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="parcelNo" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxInclusive" line="250"/>
+      <comment value="validation for constraint: minInclusive" line="254"/>
+      <comment value="validation for constraint: int" line="258"/>
+    </inline>
+  </method>
+  <method name="getParcelTotal" start="269" end="272" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ParcelTotal value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setParcelTotal" start="278" end="294" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ParcelTotal value"/>
+      <param type="int" variable="$parcelTotal"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="parcelTotal" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxInclusive" line="280"/>
+      <comment value="validation for constraint: minInclusive" line="284"/>
+      <comment value="validation for constraint: int" line="288"/>
+    </inline>
+  </method>
+  <method name="getDeliveryPlace" start="299" end="302" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DeliveryPlace value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDeliveryPlace" start="308" end="324" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DeliveryPlace value"/>
+      <param type="string" variable="$deliveryPlace"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="deliveryPlace" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="310"/>
+      <comment value="validation for constraint: pattern" line="314"/>
+      <comment value="validation for constraint: string" line="318"/>
+    </inline>
+  </method>
+  <method name="getProClima" start="329" end="332" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ProClima value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setProClima" start="338" end="346" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ProClima value"/>
+      <param type="object" variable="$proClima">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="proClima" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="340"/>
+    </inline>
+  </method>
+  <method name="getReturnInfo" start="351" end="354" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ReturnInfo value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType|null" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setReturnInfo" start="360" end="364" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ReturnInfo value"/>
+      <param type="object" variable="$returnInfo">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="returnInfo" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ReturnInfoType" namespace="Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+    </parameter>
+  </method>
+  <method name="getDimensions" start="369" end="372" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Dimensions value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Dimensions|null" namespace="\Diglin\Swisspost\StructType" name="Dimensions|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDimensions" start="378" end="382" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Dimensions value"/>
+      <param type="object" variable="$dimensions">
+        <type full="\Diglin\Swisspost\StructType\Dimensions" namespace="\Diglin\Swisspost\StructType" name="Dimensions"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="dimensions" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Dimensions" namespace="Diglin\Swisspost\StructType" name="Dimensions"/>
+    </parameter>
+  </method>
+  <method name="getUNNumbers" start="387" end="390" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get UNNumbers value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers|null" namespace="\Diglin\Swisspost\StructType" name="UNNumbers|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setUNNumbers" start="396" end="400" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set UNNumbers value"/>
+      <param type="object" variable="$uNNumbers">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="uNNumbers" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\UNNumbers" namespace="Diglin\Swisspost\StructType" name="UNNumbers"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="409" end="412" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCodeAttributes" namespace="\Diglin\Swisspost\StructType" name="ServiceCodeAttributes"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="417" end="420" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

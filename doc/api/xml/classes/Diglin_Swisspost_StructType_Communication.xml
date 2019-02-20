@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Communication" namespace="Diglin\Swisspost\StructType" name="Communication" abstract="false" final="false" start="13" end="131">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Communication.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Communication.php" size="4920" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="7d35ce8bf4ec73a9b1d6777b1849e08acc9e5998" relative="StructType/Communication.php"/>
+  <docblock>
+    <description compact="This class stands for Communication StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Email" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The Email Meta informations extracted from the WSDL - documentation: The email address. | Excludes unsupported characters.">- maxLength: 160
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Mobile" visibility="public" static="false" line="33">
+    <docblock>
+      <description compact="The Mobile Meta informations extracted from the WSDL - documentation: Defines a valid phone number. | Excludes unsupported characters.">- maxLength: 20
+- minLength: 10
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="41" end="46" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Communication"/>
+      <uses value="Communication::setEmail()"/>
+      <uses value="Communication::setMobile()"/>
+      <param type="string" variable="$email"/>
+      <param type="string" variable="$mobile"/>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="mobile" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getEmail" start="51" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Email value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setEmail" start="60" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Email value"/>
+      <param type="string" variable="$email"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </return>
+    </docblock>
+    <parameter name="email" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="62"/>
+      <comment value="validation for constraint: pattern" line="66"/>
+      <comment value="validation for constraint: string" line="70"/>
+    </inline>
+  </method>
+  <method name="getMobile" start="81" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Mobile value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMobile" start="90" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Mobile value"/>
+      <param type="string" variable="$mobile"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </return>
+    </docblock>
+    <parameter name="mobile" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="92"/>
+      <comment value="validation for constraint: minLength" line="96"/>
+      <comment value="validation for constraint: pattern" line="100"/>
+      <comment value="validation for constraint: string" line="104"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="119" end="122" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="127" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

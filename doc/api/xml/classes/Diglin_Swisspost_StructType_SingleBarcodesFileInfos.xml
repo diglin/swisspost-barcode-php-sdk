@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos" abstract="false" final="false" start="13" end="175">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="SingleBarcodesFileInfos.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/SingleBarcodesFileInfos.php" size="5940" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="8b93cc2ed95f0b629e3ea2b964b4ba143d446529" relative="StructType/SingleBarcodesFileInfos.php"/>
+  <docblock>
+    <description compact="This class stands for SingleBarcodesFileInfos StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="FrankingLicense" visibility="public" static="false" line="22">
+    <docblock>
+      <description compact="The FrankingLicense Meta informations extracted from the WSDL - documentation: Defines a franking license.">- pattern: [0-9]{8}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="PpFranking" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The PpFranking Meta informations extracted from the WSDL - default: false"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Customer" visibility="public" static="false" line="34">
+    <docblock>
+      <description compact="The Customer"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="CustomerSystem" visibility="public" static="false" line="43">
+    <docblock>
+      <description compact="The CustomerSystem Meta informations extracted from the WSDL - minOccurs: 0 - pattern: [a-zA-Z,0-9,\s]{1,255} | ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;]) - documentation: Excludes unsupported characters."/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="55" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for SingleBarcodesFileInfos"/>
+      <uses value="SingleBarcodesFileInfos::setFrankingLicense()"/>
+      <uses value="SingleBarcodesFileInfos::setPpFranking()"/>
+      <uses value="SingleBarcodesFileInfos::setCustomer()"/>
+      <uses value="SingleBarcodesFileInfos::setCustomerSystem()"/>
+      <param type="string" variable="$frankingLicense"/>
+      <param type="object" variable="$ppFranking">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="object" variable="$customer">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </param>
+      <param type="string" variable="$customerSystem"/>
+    </docblock>
+    <parameter name="frankingLicense" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="ppFranking" byreference="false" type="boolean" default="false"/>
+    <parameter name="customer" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+    </parameter>
+    <parameter name="customerSystem" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getFrankingLicense" start="67" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FrankingLicense value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFrankingLicense" start="76" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FrankingLicense value"/>
+      <param type="string" variable="$frankingLicense"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos"/>
+      </return>
+    </docblock>
+    <parameter name="frankingLicense" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="78"/>
+      <comment value="validation for constraint: string" line="82"/>
+    </inline>
+  </method>
+  <method name="getPpFranking" start="93" end="96" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PpFranking value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPpFranking" start="102" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PpFranking value"/>
+      <param type="object" variable="$ppFranking">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos"/>
+      </return>
+    </docblock>
+    <parameter name="ppFranking" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="104"/>
+    </inline>
+  </method>
+  <method name="getCustomer" start="115" end="118" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Customer value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer|null" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCustomer" start="124" end="128" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Customer value"/>
+      <param type="object" variable="$customer">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos"/>
+      </return>
+    </docblock>
+    <parameter name="customer" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+    </parameter>
+  </method>
+  <method name="getCustomerSystem" start="133" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get CustomerSystem value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCustomerSystem" start="142" end="154" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set CustomerSystem value"/>
+      <param type="string" variable="$customerSystem"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos"/>
+      </return>
+    </docblock>
+    <parameter name="customerSystem" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="144"/>
+      <comment value="validation for constraint: string" line="148"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="163" end="166" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesFileInfos" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesFileInfos"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="171" end="174" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\BarcodeResponseData" namespace="Diglin\Swisspost\StructType" name="BarcodeResponseData" abstract="false" final="false" start="13" end="224">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="BarcodeResponseData.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/BarcodeResponseData.php" size="7466" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="23570ece0f6a888ae210bb5dcec490dab7a1ad3f" relative="StructType/BarcodeResponseData.php"/>
+  <docblock>
+    <description compact="This class stands for BarcodeResponseData StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Barcode" visibility="public" static="false" line="21">
+    <docblock>
+      <description compact="The Barcode Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="DeliveryNoteRef" visibility="public" static="false" line="30">
+    <docblock>
+      <description compact="The DeliveryNoteRef Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Lieferscheinnummer Barcodeliste BMZ (128-er Klartext-Barcode) - maxLength: 50"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="BarcodeDefinition" visibility="public" static="false" line="35">
+    <docblock>
+      <description compact="The BarcodeDefinition"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="ColorPrintRequired" visibility="public" static="false" line="40">
+    <docblock>
+      <description compact="The ColorPrintRequired"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Errors" visibility="public" static="false" line="47">
+    <docblock>
+      <description compact="The Errors Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Warnings" visibility="public" static="false" line="54">
+    <docblock>
+      <description compact="The Warnings Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="70" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for BarcodeResponseData"/>
+      <uses value="BarcodeResponseData::setBarcode()"/>
+      <uses value="BarcodeResponseData::setDeliveryNoteRef()"/>
+      <uses value="BarcodeResponseData::setBarcodeDefinition()"/>
+      <uses value="BarcodeResponseData::setColorPrintRequired()"/>
+      <uses value="BarcodeResponseData::setErrors()"/>
+      <uses value="BarcodeResponseData::setWarnings()"/>
+      <param type="string" variable="$barcode"/>
+      <param type="string" variable="$deliveryNoteRef"/>
+      <param type="object" variable="$barcodeDefinition">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </param>
+      <param type="object" variable="$colorPrintRequired">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <param type="object" variable="$warnings">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </param>
+    </docblock>
+    <parameter name="barcode" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="deliveryNoteRef" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="barcodeDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\BarcodeDefinition" namespace="Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+    </parameter>
+    <parameter name="colorPrintRequired" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+    <parameter name="warnings" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\WarningsType" namespace="Diglin\Swisspost\StructType" name="WarningsType"/>
+    </parameter>
+  </constructor>
+  <method name="getBarcode" start="84" end="87" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Barcode value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setBarcode" start="93" end="101" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Barcode value"/>
+      <param type="string" variable="$barcode"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="barcode" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: string" line="95"/>
+    </inline>
+  </method>
+  <method name="getDeliveryNoteRef" start="106" end="109" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DeliveryNoteRef value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDeliveryNoteRef" start="115" end="127" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DeliveryNoteRef value"/>
+      <param type="string" variable="$deliveryNoteRef"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="deliveryNoteRef" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="117"/>
+      <comment value="validation for constraint: string" line="121"/>
+    </inline>
+  </method>
+  <method name="getBarcodeDefinition" start="132" end="135" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get BarcodeDefinition value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition|null" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setBarcodeDefinition" start="141" end="145" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set BarcodeDefinition value"/>
+      <param type="object" variable="$barcodeDefinition">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="barcodeDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\BarcodeDefinition" namespace="Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+    </parameter>
+  </method>
+  <method name="getColorPrintRequired" start="150" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ColorPrintRequired value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setColorPrintRequired" start="159" end="167" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ColorPrintRequired value"/>
+      <param type="object" variable="$colorPrintRequired">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="colorPrintRequired" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="161"/>
+    </inline>
+  </method>
+  <method name="getErrors" start="172" end="175" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Errors value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType|null" namespace="\Diglin\Swisspost\StructType" name="ErrorsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setErrors" start="181" end="185" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Errors value"/>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </method>
+  <method name="getWarnings" start="190" end="193" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Warnings value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\WarningsType|null" namespace="\Diglin\Swisspost\StructType" name="WarningsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setWarnings" start="199" end="203" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Warnings value"/>
+      <param type="object" variable="$warnings">
+        <type full="\Diglin\Swisspost\StructType\WarningsType" namespace="\Diglin\Swisspost\StructType" name="WarningsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="warnings" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\WarningsType" namespace="Diglin\Swisspost\StructType" name="WarningsType"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="212" end="215" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeResponseData" namespace="\Diglin\Swisspost\StructType" name="BarcodeResponseData"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="220" end="223" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

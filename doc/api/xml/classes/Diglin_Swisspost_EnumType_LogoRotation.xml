@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\LogoRotation" namespace="Diglin\Swisspost\EnumType" name="LogoRotation" abstract="false" final="false" start="13" end="70">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="LogoRotation.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/LogoRotation.php" size="1529" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="62f85df41953c3264e6c42ef152218caa0e12e16" relative="EnumType/LogoRotation.php"/>
+  <docblock>
+    <description compact="This class stands for LogoRotation EnumType Meta informations extracted from the WSDL - documentation: Default value is 270."/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_0" value="'0'">
+    <docblock>
+      <description compact="Constant for value '0'"/>
+      <return description="'0'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_90" value="'90'">
+    <docblock>
+      <description compact="Constant for value '90'"/>
+      <return description="'90'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_180" value="'180'">
+    <docblock>
+      <description compact="Constant for value '180'"/>
+      <return description="'180'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_270" value="'270'">
+    <docblock>
+      <description compact="Constant for value '270'"/>
+      <return description="'270'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="41" end="44" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="53" end="61" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_0"/>
+      <uses value="self::VALUE_90"/>
+      <uses value="self::VALUE_180"/>
+      <uses value="self::VALUE_270"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

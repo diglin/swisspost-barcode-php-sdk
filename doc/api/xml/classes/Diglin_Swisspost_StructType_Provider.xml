@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Provider" namespace="Diglin\Swisspost\StructType" name="Provider" abstract="false" final="false" start="13" end="68">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Provider.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Provider.php" size="1769" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="5537621c51f2cd9e47843975ee295892fd24fbb7" relative="StructType/Provider.php"/>
+  <docblock>
+    <description compact="This class stands for Provider StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Sending" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The Sending"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="25" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Provider"/>
+      <uses value="Provider::setSending()"/>
+      <param type="object" variable="$sending">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </param>
+    </docblock>
+    <parameter name="sending" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Sending" namespace="Diglin\Swisspost\StructType" name="Sending"/>
+    </parameter>
+  </constructor>
+  <method name="getSending" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Sending value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending|null" namespace="\Diglin\Swisspost\StructType" name="Sending|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setSending" start="43" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Sending value"/>
+      <param type="object" variable="$sending">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Provider" namespace="\Diglin\Swisspost\StructType" name="Provider"/>
+      </return>
+    </docblock>
+    <parameter name="sending" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Sending" namespace="Diglin\Swisspost\StructType" name="Sending"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="56" end="59" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Provider" namespace="\Diglin\Swisspost\StructType" name="Provider"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="64" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\NotificationService" namespace="Diglin\Swisspost" name="NotificationService" abstract="false" final="false" start="13" end="24">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src" file="NotificationService.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/NotificationService.php" size="702" time="2019-01-01T23:52:33+01:00" unixtime="1546383153" sha1="aae92bd313eec88630944324af090d95b75a1e26" relative="NotificationService.php"/>
+  <constant type="integer" name="ORDER_CONFIRMATION" value="1"/>
+  <constant type="integer" name="DELIVERY_INFORMATION" value="2"/>
+  <constant type="integer" name="COLLECTION_INFORMATION" value="4"/>
+  <constant type="integer" name="REMINDER_RECIPIENT" value="32"/>
+  <constant type="integer" name="HANDOVER_STATUS" value="64"/>
+  <constant type="integer" name="EXCHANGE_RETURN" value="128"/>
+  <constant type="integer" name="SATURDAY_DELIVERY" value="256"/>
+  <constant type="integer" name="EVENING_DELIVERY_FOLLOWING_DAYS" value="257"/>
+  <constant type="integer" name="EVENING_DELIVERY_SAME_DAY" value="258"/>
+</class>

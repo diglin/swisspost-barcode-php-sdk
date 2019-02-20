@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\NotificationType" namespace="Diglin\Swisspost\EnumType" name="NotificationType" abstract="false" final="false" start="11" end="54">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="NotificationType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/NotificationType.php" size="1154" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="a47be7f72815a33fed9aa81f4220764b4a7553a1" relative="EnumType/NotificationType.php"/>
+  <docblock>
+    <description compact="This class stands for NotificationType EnumType"/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_EMAIL" value="'EMAIL'">
+    <docblock>
+      <description compact="Constant for value 'EMAIL'"/>
+      <return description="'EMAIL'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_SMS" value="'SMS'">
+    <docblock>
+      <description compact="Constant for value 'SMS'"/>
+      <return description="'SMS'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="29" end="32" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="39" end="45" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_EMAIL"/>
+      <uses value="self::VALUE_SMS"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="Diglin\Swisspost\StructType" name="ReadAdditionalServices" abstract="false" final="false" start="13" end="135">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReadAdditionalServices.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReadAdditionalServices.php" size="4638" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="28e60385217a4f296867b2d7de64a1e33d43b336" relative="StructType/ReadAdditionalServices.php"/>
+  <docblock>
+    <description compact="This class stands for ReadAdditionalServices StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Language" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The Language"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="PRZL" visibility="public" static="false" line="28">
+    <docblock>
+      <description compact="The PRZL Meta informations extracted from the WSDL - maxOccurs: unbounded - documentation: Identifies a PRZL.">- pattern: [a-zA-Z,0-9]{1,10}</description>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="36" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReadAdditionalServices"/>
+      <uses value="ReadAdditionalServices::setLanguage()"/>
+      <uses value="ReadAdditionalServices::setPRZL()"/>
+      <param type="string" variable="$language"/>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getLanguage" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Language value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLanguage" start="58" end="66" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Language value"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+      </return>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="60"/>
+    </inline>
+  </method>
+  <method name="getPRZL" start="71" end="74" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PRZL value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string[]|nu" namespace="Diglin\Swisspost\StructType" name="string[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPRZL" start="81" end="95" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+      </return>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="83"/>
+    </inline>
+  </method>
+  <method name="addToPRZL" start="102" end="114" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="104"/>
+      <comment value="validation for constraint: itemType" line="108"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="123" end="126" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="131" end="134" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

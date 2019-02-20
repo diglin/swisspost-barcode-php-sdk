@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Attributes" namespace="Diglin\Swisspost\StructType" name="Attributes" abstract="false" final="false" start="13" end="103">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Attributes.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Attributes.php" size="3382" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="e5c6a9e5801de1cf1f94e32b8af78605c882675e" relative="StructType/Attributes.php"/>
+  <docblock>
+    <description compact="This class stands for Attributes StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="PRZL" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The PRZL Meta informations extracted from the WSDL - maxOccurs: unbounded - minOccurs: 1 - documentation: Identifies a PRZL.">- pattern: [a-zA-Z,0-9]{1,10}</description>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="30" end="34" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Attributes"/>
+      <uses value="Attributes::setPRZL()"/>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getPRZL" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PRZL value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPRZL" start="49" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$pRZL" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </return>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="51"/>
+    </inline>
+  </method>
+  <method name="addToPRZL" start="70" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to PRZL value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="72"/>
+      <comment value="validation for constraint: itemType" line="76"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="91" end="94" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="99" end="102" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

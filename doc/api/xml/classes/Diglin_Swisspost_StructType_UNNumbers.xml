@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\UNNumbers" namespace="Diglin\Swisspost\StructType" name="UNNumbers" abstract="false" final="false" start="15" end="104">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="UNNumbers.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/UNNumbers.php" size="3621" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="6ed486043e56f62b8193e32c21cacde7f4fa92e0" relative="StructType/UNNumbers.php"/>
+  <docblock>
+    <description compact="This class stands for UNNumbers StructType Meta informations extracted from the WSDL - documentation: Represents the UN Numbers for the additional service LQ (limited quantities)."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="UNNumber" visibility="public" static="false" line="25">
+    <docblock>
+      <description compact="The UNNumber Meta informations extracted from the WSDL - maxOccurs: unbounded - minOccurs: 0 - totalDigits: 4"/>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\int" namespace="Diglin\Swisspost\StructType" name="int"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="31" end="35" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for UNNumbers"/>
+      <uses value="UNNumbers::setUNNumber()"/>
+      <param type="array" variable="$uNNumber" of="object">
+        <type full="Diglin\Swisspost\StructType\int" namespace="Diglin\Swisspost\StructType" name="int"/>
+      </param>
+    </docblock>
+    <parameter name="uNNumber" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getUNNumber" start="40" end="43" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get UNNumber value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\int[]|nu" namespace="Diglin\Swisspost\StructType" name="int[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setUNNumber" start="50" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set UNNumber value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$uNNumber" of="object">
+        <type full="Diglin\Swisspost\StructType\int" namespace="Diglin\Swisspost\StructType" name="int"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </return>
+    </docblock>
+    <parameter name="uNNumber" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="52"/>
+    </inline>
+  </method>
+  <method name="addToUNNumber" start="71" end="83" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to UNNumber value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="int" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="73"/>
+      <comment value="validation for constraint: itemType" line="77"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="92" end="95" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\UNNumbers" namespace="\Diglin\Swisspost\StructType" name="UNNumbers"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="100" end="103" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

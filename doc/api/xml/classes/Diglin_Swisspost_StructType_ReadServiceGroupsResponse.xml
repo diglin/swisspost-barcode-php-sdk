@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse" abstract="false" final="false" start="13" end="121">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReadServiceGroupsResponse.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReadServiceGroupsResponse.php" size="4311" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="16af8018037e2313925670550ef5a9be9b8ffff0" relative="StructType/ReadServiceGroupsResponse.php"/>
+  <docblock>
+    <description compact="This class stands for ReadServiceGroupsResponse StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ServiceGroup" visibility="public" static="false" line="22">
+    <docblock>
+      <description compact="The ServiceGroup Meta informations extracted from the WSDL - maxOccurs: unbounded - minOccurs: 0"/>
+      <var type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Errors" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The Errors Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="37" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReadServiceGroupsResponse"/>
+      <uses value="ReadServiceGroupsResponse::setServiceGroup()"/>
+      <uses value="ReadServiceGroupsResponse::setErrors()"/>
+      <param type="array" variable="$serviceGroup" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </param>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+    </docblock>
+    <parameter name="serviceGroup" byreference="false" type="array" default=""/>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </constructor>
+  <method name="getServiceGroup" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ServiceGroup value"/>
+      <return type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup[]|nu" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setServiceGroup" start="57" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ServiceGroup value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$serviceGroup" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="serviceGroup" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToServiceGroup" start="74" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to ServiceGroup value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="object" variable="$item">
+        <type full="\Diglin\Swisspost\StructType\ServiceGroup" namespace="\Diglin\Swisspost\StructType" name="ServiceGroup"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ServiceGroup" namespace="Diglin\Swisspost\StructType" name="ServiceGroup"/>
+    </parameter>
+    <inline>
+      <comment value="validation for constraint: itemType" line="76"/>
+    </inline>
+  </method>
+  <method name="getErrors" start="87" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Errors value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType|null" namespace="\Diglin\Swisspost\StructType" name="ErrorsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setErrors" start="96" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Errors value"/>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="109" end="112" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="117" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReadBasicServices" namespace="Diglin\Swisspost\StructType" name="ReadBasicServices" abstract="false" final="false" start="13" end="105">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReadBasicServices.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReadBasicServices.php" size="3128" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="8a38177b7a99583a14b3f14b9100f074d88b49a4" relative="StructType/ReadBasicServices.php"/>
+  <docblock>
+    <description compact="This class stands for ReadBasicServices StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Language" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The Language"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ServiceGroupID" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The ServiceGroupID"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="32" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReadBasicServices"/>
+      <uses value="ReadBasicServices::setLanguage()"/>
+      <uses value="ReadBasicServices::setServiceGroupID()"/>
+      <param type="string" variable="$language"/>
+      <param type="int" variable="$serviceGroupID"/>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="serviceGroupID" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getLanguage" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Language value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLanguage" start="54" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Language value"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadBasicServices" namespace="\Diglin\Swisspost\StructType" name="ReadBasicServices"/>
+      </return>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="56"/>
+    </inline>
+  </method>
+  <method name="getServiceGroupID" start="67" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ServiceGroupID value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setServiceGroupID" start="76" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ServiceGroupID value"/>
+      <param type="int" variable="$serviceGroupID"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadBasicServices" namespace="\Diglin\Swisspost\StructType" name="ReadBasicServices"/>
+      </return>
+    </docblock>
+    <parameter name="serviceGroupID" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="78"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="93" end="96" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadBasicServices" namespace="\Diglin\Swisspost\StructType" name="ReadBasicServices"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="101" end="104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

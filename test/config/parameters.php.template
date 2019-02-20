@@ -1,0 +1,20 @@
+<?php
+/**
+ * Diglin GmbH - Switzerland
+ *
+ * @author      Sylvain Rayé <support at diglin.com>
+ * @category    Diglin
+ * @package     Swisspost
+ * @copyright   Copyright (c) Diglin (http://www.diglin.com)
+ */
+
+$config = array(
+    'location'         => 'https://wsbc.post.ch/wsbc/barcode/v2_4',
+    'login'            => '',
+    'password'         => '',
+    'franking_licence' => '',
+//    'wsdl'             => 'https://wsbc.post.ch/wsbc/barcode/v2_4?wsdl'
+    'wsdl'             => __DIR__ . '/../../barcode_v2_4.wsdl',
+    'language'         => 'en',
+    'debug'            => true,
+);

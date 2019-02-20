@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\PrintAddressesType" namespace="Diglin\Swisspost\EnumType" name="PrintAddressesType" abstract="false" final="false" start="13" end="70">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="PrintAddressesType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/PrintAddressesType.php" size="1833" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="c1c890d062dfe1968a65a319ee5d4c665614674c" relative="EnumType/PrintAddressesType.php"/>
+  <docblock>
+    <description compact="This class stands for PrintAddressesType EnumType Meta informations extracted from the WSDL - documentation: Enumeration to indicated wheter addresses are printet or not."/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_NONE" value="'None'">
+    <docblock>
+      <description compact="Constant for value 'None'"/>
+      <return description="'None'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_ONLY_RECIPIENT" value="'OnlyRecipient'">
+    <docblock>
+      <description compact="Constant for value 'OnlyRecipient'"/>
+      <return description="'OnlyRecipient'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_ONLY_CUSTOMER" value="'OnlyCustomer'">
+    <docblock>
+      <description compact="Constant for value 'OnlyCustomer'"/>
+      <return description="'OnlyCustomer'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_RECIPIENT_AND_CUSTOMER" value="'RecipientAndCustomer'">
+    <docblock>
+      <description compact="Constant for value 'RecipientAndCustomer'"/>
+      <return description="'RecipientAndCustomer'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="41" end="44" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="53" end="61" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_NONE"/>
+      <uses value="self::VALUE_ONLY_RECIPIENT"/>
+      <uses value="self::VALUE_ONLY_CUSTOMER"/>
+      <uses value="self::VALUE_RECIPIENT_AND_CUSTOMER"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

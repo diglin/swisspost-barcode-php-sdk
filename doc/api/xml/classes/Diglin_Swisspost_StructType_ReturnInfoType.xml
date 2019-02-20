@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReturnInfoType" namespace="Diglin\Swisspost\StructType" name="ReturnInfoType" abstract="false" final="false" start="15" end="184">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReturnInfoType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReturnInfoType.php" size="6409" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="ad84882bb726abef84b33072628ccd58f9b7611c" relative="StructType/ReturnInfoType.php"/>
+  <docblock>
+    <description compact="This class stands for ReturnInfoType StructType Meta informations extracted from the WSDL - documentation: Information regarding returns."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ReturnNote" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The ReturnNote Meta informations extracted from the WSDL - documentation: Rücksendevermerk"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="InstructionForReturns" visibility="public" static="false" line="30">
+    <docblock>
+      <description compact="The InstructionForReturns Meta informations extracted from the WSDL - documentation: Vorverfügung Rücksendungen"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="ReturnService" visibility="public" static="false" line="39">
+    <docblock>
+      <description compact="The ReturnService Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Rücksendeleistung - totalDigits: 1"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="CustomerIDReturnAddress" visibility="public" static="false" line="48">
+    <docblock>
+      <description compact="The CustomerIDReturnAddress Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Adress-ID Rückführadresse - pattern: \d{8}"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="60" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReturnInfoType"/>
+      <uses value="ReturnInfoType::setReturnNote()"/>
+      <uses value="ReturnInfoType::setInstructionForReturns()"/>
+      <uses value="ReturnInfoType::setReturnService()"/>
+      <uses value="ReturnInfoType::setCustomerIDReturnAddress()"/>
+      <param type="object" variable="$returnNote">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="object" variable="$instructionForReturns">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="int" variable="$returnService"/>
+      <param type="int" variable="$customerIDReturnAddress"/>
+    </docblock>
+    <parameter name="returnNote" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="instructionForReturns" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="returnService" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="customerIDReturnAddress" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getReturnNote" start="72" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ReturnNote value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setReturnNote" start="81" end="89" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ReturnNote value"/>
+      <param type="object" variable="$returnNote">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </return>
+    </docblock>
+    <parameter name="returnNote" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="83"/>
+    </inline>
+  </method>
+  <method name="getInstructionForReturns" start="94" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get InstructionForReturns value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setInstructionForReturns" start="103" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set InstructionForReturns value"/>
+      <param type="object" variable="$instructionForReturns">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </return>
+    </docblock>
+    <parameter name="instructionForReturns" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="105"/>
+    </inline>
+  </method>
+  <method name="getReturnService" start="116" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ReturnService value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setReturnService" start="125" end="137" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ReturnService value"/>
+      <param type="int" variable="$returnService"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </return>
+    </docblock>
+    <parameter name="returnService" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="127"/>
+      <comment value="validation for constraint: int" line="131"/>
+    </inline>
+  </method>
+  <method name="getCustomerIDReturnAddress" start="142" end="145" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get CustomerIDReturnAddress value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCustomerIDReturnAddress" start="151" end="163" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set CustomerIDReturnAddress value"/>
+      <param type="int" variable="$customerIDReturnAddress"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </return>
+    </docblock>
+    <parameter name="customerIDReturnAddress" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="153"/>
+      <comment value="validation for constraint: int" line="157"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="172" end="175" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReturnInfoType" namespace="\Diglin\Swisspost\StructType" name="ReturnInfoType"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="180" end="183" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

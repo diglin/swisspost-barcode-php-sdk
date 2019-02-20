@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\ServiceType\Generate" namespace="Diglin\Swisspost\ServiceType" name="Generate" abstract="false" final="false" start="13" end="89">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType" file="Generate.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType/Generate.php" size="3189" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="c9bf130591b82f0da5df4825444f24cac2eca435" relative="ServiceType/Generate.php"/>
+  <docblock>
+    <description compact="This class stands for Generate ServiceType"/>
+    <subpackage value="Services"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractSoapClientBase" namespace="WsdlToPhp\PackageBase" name="AbstractSoapClientBase" unresolved="true"/>
+  <method name="GenerateLabel" start="24" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named GenerateLabel"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabel" namespace="\Diglin\Swisspost\StructType" name="GenerateLabel"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelResponse|bool" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\GenerateLabel" namespace="Diglin\Swisspost\StructType" name="GenerateLabel"/>
+    </parameter>
+  </method>
+  <method name="GenerateSingleBarcodes" start="43" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named GenerateSingleBarcodes"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodes"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateSingleBarcodesResponse|bool" namespace="\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\GenerateSingleBarcodes" namespace="Diglin\Swisspost\StructType" name="GenerateSingleBarcodes"/>
+    </parameter>
+  </method>
+  <method name="GenerateBarcode" start="62" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named GenerateBarcode"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\GenerateBarcode" namespace="\Diglin\Swisspost\StructType" name="GenerateBarcode"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateBarcodeResponse|bool" namespace="\Diglin\Swisspost\StructType" name="GenerateBarcodeResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\GenerateBarcode" namespace="Diglin\Swisspost\StructType" name="GenerateBarcode"/>
+    </parameter>
+  </method>
+  <method name="getResult" start="77" end="80" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the result"/>
+      <see value="AbstractSoapClientBase::getResult()"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateBarcodeResponse|\Diglin\Swisspost\StructType\GenerateLabelResponse|\Diglin\Swisspost\StructType\GenerateSingleBarcodesResponse" namespace="\Diglin\Swisspost\StructType\GenerateBarcodeResponse|\Diglin\Swisspost\StructType\GenerateLabelResponse|\Diglin\Swisspost\StructType" name="GenerateSingleBarcodesResponse"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="85" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

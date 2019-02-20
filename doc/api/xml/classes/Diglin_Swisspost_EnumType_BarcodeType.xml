@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\BarcodeType" namespace="Diglin\Swisspost\EnumType" name="BarcodeType" abstract="false" final="false" start="13" end="63">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="BarcodeType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/BarcodeType.php" size="1440" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="40b565c9cbd38775ee61ad177ade3677899aa93b" relative="EnumType/BarcodeType.php"/>
+  <docblock>
+    <description compact="This class stands for BarcodeType EnumType Meta informations extracted from the WSDL - documentation: Enumeration of the different barcode types."/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_LSO_1" value="'LSO_1'">
+    <docblock>
+      <description compact="Constant for value 'LSO_1'"/>
+      <return description="'LSO_1'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_LSO_2" value="'LSO_2'">
+    <docblock>
+      <description compact="Constant for value 'LSO_2'"/>
+      <return description="'LSO_2'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_LSO_3" value="'LSO_3'">
+    <docblock>
+      <description compact="Constant for value 'LSO_3'"/>
+      <return description="'LSO_3'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="36" end="39" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="47" end="54" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_LSO_1"/>
+      <uses value="self::VALUE_LSO_2"/>
+      <uses value="self::VALUE_LSO_3"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="59" end="62" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ServiceCode" namespace="Diglin\Swisspost\StructType" name="ServiceCode" abstract="false" final="false" start="15" end="118">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ServiceCode.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ServiceCode.php" size="3821" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1305772860a62622fecb93b6bf3f175b6afa0b8f" relative="StructType/ServiceCode.php"/>
+  <docblock>
+    <description compact="This class stands for ServiceCode StructType Meta informations extracted from the WSDL - documentation: Represents a service code."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="PRZL" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The PRZL Meta informations extracted from the WSDL - documentation: Identifies a PRZL.">- pattern: [a-zA-Z,0-9]{1,10}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Description" visibility="public" static="false" line="32">
+    <docblock>
+      <description compact="The Description Meta informations extracted from the WSDL - documentation: A common type for descriptions.">- maxLength: 255</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="40" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ServiceCode"/>
+      <uses value="ServiceCode::setPRZL()"/>
+      <uses value="ServiceCode::setDescription()"/>
+      <param type="string" variable="$pRZL"/>
+      <param type="string" variable="$description"/>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getPRZL" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PRZL value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPRZL" start="59" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PRZL value"/>
+      <param type="string" variable="$pRZL"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </return>
+    </docblock>
+    <parameter name="pRZL" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="61"/>
+      <comment value="validation for constraint: string" line="65"/>
+    </inline>
+  </method>
+  <method name="getDescription" start="76" end="79" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Description value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDescription" start="85" end="97" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Description value"/>
+      <param type="string" variable="$description"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </return>
+    </docblock>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="87"/>
+      <comment value="validation for constraint: string" line="91"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="106" end="109" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="114" end="117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

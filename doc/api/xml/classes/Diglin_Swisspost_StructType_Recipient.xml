@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Recipient" namespace="Diglin\Swisspost\StructType" name="Recipient" abstract="false" final="false" start="13" end="915">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Recipient.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Recipient.php" size="36594" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="337f153b43ff2f7b3082dc81ffe1dff1eef6e07c" relative="StructType/Recipient.php"/>
+  <docblock>
+    <description compact="This class stands for Recipient StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ZIP" visibility="public" static="false" line="25">
+    <docblock>
+      <description compact="The ZIP Meta informations extracted from the WSDL - minOccurs: 1 - maxLength: 10 - totalDigits: 6 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="PostIdent" visibility="public" static="false" line="35">
+    <docblock>
+      <description compact="The PostIdent Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 15 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Title" visibility="public" static="false" line="45">
+    <docblock>
+      <description compact="The Title Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="PersonallyAddressed" visibility="public" static="false" line="52">
+    <docblock>
+      <description compact="The PersonallyAddressed Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Name1" visibility="public" static="false" line="61">
+    <docblock>
+      <description compact="The Name1 Meta informations extracted from the WSDL - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="FirstName" visibility="public" static="false" line="71">
+    <docblock>
+      <description compact="The FirstName Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Name2" visibility="public" static="false" line="81">
+    <docblock>
+      <description compact="The Name2 Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Name3" visibility="public" static="false" line="91">
+    <docblock>
+      <description compact="The Name3 Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="AddressSuffix" visibility="public" static="false" line="101">
+    <docblock>
+      <description compact="The AddressSuffix Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Street" visibility="public" static="false" line="111">
+    <docblock>
+      <description compact="The Street Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="HouseNo" visibility="public" static="false" line="121">
+    <docblock>
+      <description compact="The HouseNo Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 10 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="POBox" visibility="public" static="false" line="131">
+    <docblock>
+      <description compact="The POBox Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="FloorNo" visibility="public" static="false" line="141">
+    <docblock>
+      <description compact="The FloorNo Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 5 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="MailboxNo" visibility="public" static="false" line="149">
+    <docblock>
+      <description compact="The MailboxNo Meta informations extracted from the WSDL - minOccurs: 0 - totalDigits: 10"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="City" visibility="public" static="false" line="158">
+    <docblock>
+      <description compact="The City Meta informations extracted from the WSDL - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Country" visibility="public" static="false" line="167">
+    <docblock>
+      <description compact="The Country Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The ISO country code.">- pattern: [a-zA-Z]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Hauskey" visibility="public" static="false" line="175">
+    <docblock>
+      <description compact="The Hauskey Meta informations extracted from the WSDL - minOccurs: 0 - totalDigits: 13"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="Phone" visibility="public" static="false" line="186">
+    <docblock>
+      <description compact="The Phone Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Defines a valid phone number. | Excludes unsupported characters.">- maxLength: 20
+- minLength: 10
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Mobile" visibility="public" static="false" line="197">
+    <docblock>
+      <description compact="The Mobile Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Defines a valid phone number. | Excludes unsupported characters.">- maxLength: 20
+- minLength: 10
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="EMail" visibility="public" static="false" line="207">
+    <docblock>
+      <description compact="The EMail Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The email address. | Excludes unsupported characters.">- maxLength: 160
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="LabelAddress" visibility="public" static="false" line="214">
+    <docblock>
+      <description compact="The LabelAddress Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="260" end="284" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Recipient"/>
+      <uses value="Recipient::setZIP()"/>
+      <uses value="Recipient::setPostIdent()"/>
+      <uses value="Recipient::setTitle()"/>
+      <uses value="Recipient::setPersonallyAddressed()"/>
+      <uses value="Recipient::setName1()"/>
+      <uses value="Recipient::setFirstName()"/>
+      <uses value="Recipient::setName2()"/>
+      <uses value="Recipient::setName3()"/>
+      <uses value="Recipient::setAddressSuffix()"/>
+      <uses value="Recipient::setStreet()"/>
+      <uses value="Recipient::setHouseNo()"/>
+      <uses value="Recipient::setPOBox()"/>
+      <uses value="Recipient::setFloorNo()"/>
+      <uses value="Recipient::setMailboxNo()"/>
+      <uses value="Recipient::setCity()"/>
+      <uses value="Recipient::setCountry()"/>
+      <uses value="Recipient::setHauskey()"/>
+      <uses value="Recipient::setPhone()"/>
+      <uses value="Recipient::setMobile()"/>
+      <uses value="Recipient::setEMail()"/>
+      <uses value="Recipient::setLabelAddress()"/>
+      <param type="string" variable="$zIP"/>
+      <param type="string" variable="$postIdent"/>
+      <param type="string" variable="$title"/>
+      <param type="object" variable="$personallyAddressed">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <param type="string" variable="$name1"/>
+      <param type="string" variable="$firstName"/>
+      <param type="string" variable="$name2"/>
+      <param type="string" variable="$name3"/>
+      <param type="string" variable="$addressSuffix"/>
+      <param type="string" variable="$street"/>
+      <param type="string" variable="$houseNo"/>
+      <param type="string" variable="$pOBox"/>
+      <param type="string" variable="$floorNo"/>
+      <param type="int" variable="$mailboxNo"/>
+      <param type="string" variable="$city"/>
+      <param type="string" variable="$country"/>
+      <param type="int" variable="$hauskey"/>
+      <param type="string" variable="$phone"/>
+      <param type="string" variable="$mobile"/>
+      <param type="string" variable="$eMail"/>
+      <param type="object" variable="$labelAddress">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </param>
+    </docblock>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="postIdent" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="title" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="personallyAddressed" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="firstName" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name3" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="addressSuffix" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="houseNo" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="floorNo" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="mailboxNo" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="hauskey" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="phone" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="mobile" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="eMail" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="labelAddress" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelAddress" namespace="Diglin\Swisspost\StructType" name="LabelAddress"/>
+    </parameter>
+  </constructor>
+  <method name="getZIP" start="289" end="292" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ZIP value"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="setZIP" start="298" end="318" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ZIP value"/>
+      <param type="string" variable="$zIP"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="300"/>
+      <comment value="validation for constraint: totalDigits" line="304"/>
+      <comment value="validation for constraint: pattern" line="308"/>
+      <comment value="validation for constraint: string" line="312"/>
+    </inline>
+  </method>
+  <method name="getPostIdent" start="323" end="326" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PostIdent value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPostIdent" start="332" end="348" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PostIdent value"/>
+      <param type="string" variable="$postIdent"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="postIdent" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="334"/>
+      <comment value="validation for constraint: pattern" line="338"/>
+      <comment value="validation for constraint: string" line="342"/>
+    </inline>
+  </method>
+  <method name="getTitle" start="353" end="356" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Title value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setTitle" start="362" end="378" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Title value"/>
+      <param type="string" variable="$title"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="title" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="364"/>
+      <comment value="validation for constraint: pattern" line="368"/>
+      <comment value="validation for constraint: string" line="372"/>
+    </inline>
+  </method>
+  <method name="getPersonallyAddressed" start="383" end="386" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PersonallyAddressed value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPersonallyAddressed" start="392" end="400" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PersonallyAddressed value"/>
+      <param type="object" variable="$personallyAddressed">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="personallyAddressed" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="394"/>
+    </inline>
+  </method>
+  <method name="getName1" start="405" end="408" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name1 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName1" start="414" end="430" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name1 value"/>
+      <param type="string" variable="$name1"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="416"/>
+      <comment value="validation for constraint: pattern" line="420"/>
+      <comment value="validation for constraint: string" line="424"/>
+    </inline>
+  </method>
+  <method name="getFirstName" start="435" end="438" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FirstName value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFirstName" start="444" end="460" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FirstName value"/>
+      <param type="string" variable="$firstName"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="firstName" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="446"/>
+      <comment value="validation for constraint: pattern" line="450"/>
+      <comment value="validation for constraint: string" line="454"/>
+    </inline>
+  </method>
+  <method name="getName2" start="465" end="468" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name2 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName2" start="474" end="490" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name2 value"/>
+      <param type="string" variable="$name2"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="476"/>
+      <comment value="validation for constraint: pattern" line="480"/>
+      <comment value="validation for constraint: string" line="484"/>
+    </inline>
+  </method>
+  <method name="getName3" start="495" end="498" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name3 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName3" start="504" end="520" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name3 value"/>
+      <param type="string" variable="$name3"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="name3" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="506"/>
+      <comment value="validation for constraint: pattern" line="510"/>
+      <comment value="validation for constraint: string" line="514"/>
+    </inline>
+  </method>
+  <method name="getAddressSuffix" start="525" end="528" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get AddressSuffix value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setAddressSuffix" start="534" end="550" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set AddressSuffix value"/>
+      <param type="string" variable="$addressSuffix"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="addressSuffix" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="536"/>
+      <comment value="validation for constraint: pattern" line="540"/>
+      <comment value="validation for constraint: string" line="544"/>
+    </inline>
+  </method>
+  <method name="getStreet" start="555" end="558" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Street value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setStreet" start="564" end="580" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Street value"/>
+      <param type="string" variable="$street"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="566"/>
+      <comment value="validation for constraint: pattern" line="570"/>
+      <comment value="validation for constraint: string" line="574"/>
+    </inline>
+  </method>
+  <method name="getHouseNo" start="585" end="588" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get HouseNo value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setHouseNo" start="594" end="610" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set HouseNo value"/>
+      <param type="string" variable="$houseNo"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="houseNo" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="596"/>
+      <comment value="validation for constraint: pattern" line="600"/>
+      <comment value="validation for constraint: string" line="604"/>
+    </inline>
+  </method>
+  <method name="getPOBox" start="615" end="618" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get POBox value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPOBox" start="624" end="640" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set POBox value"/>
+      <param type="string" variable="$pOBox"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="626"/>
+      <comment value="validation for constraint: pattern" line="630"/>
+      <comment value="validation for constraint: string" line="634"/>
+    </inline>
+  </method>
+  <method name="getFloorNo" start="645" end="648" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FloorNo value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFloorNo" start="654" end="670" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FloorNo value"/>
+      <param type="string" variable="$floorNo"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="floorNo" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="656"/>
+      <comment value="validation for constraint: pattern" line="660"/>
+      <comment value="validation for constraint: string" line="664"/>
+    </inline>
+  </method>
+  <method name="getMailboxNo" start="675" end="678" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get MailboxNo value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMailboxNo" start="684" end="696" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set MailboxNo value"/>
+      <param type="int" variable="$mailboxNo"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="mailboxNo" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="686"/>
+      <comment value="validation for constraint: int" line="690"/>
+    </inline>
+  </method>
+  <method name="getCity" start="701" end="704" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get City value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCity" start="710" end="726" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set City value"/>
+      <param type="string" variable="$city"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="712"/>
+      <comment value="validation for constraint: pattern" line="716"/>
+      <comment value="validation for constraint: string" line="720"/>
+    </inline>
+  </method>
+  <method name="getCountry" start="731" end="734" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Country value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCountry" start="740" end="752" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Country value"/>
+      <param type="string" variable="$country"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="742"/>
+      <comment value="validation for constraint: string" line="746"/>
+    </inline>
+  </method>
+  <method name="getHauskey" start="757" end="760" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Hauskey value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setHauskey" start="766" end="778" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Hauskey value"/>
+      <param type="int" variable="$hauskey"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="hauskey" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="768"/>
+      <comment value="validation for constraint: int" line="772"/>
+    </inline>
+  </method>
+  <method name="getPhone" start="783" end="786" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Phone value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPhone" start="792" end="812" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Phone value"/>
+      <param type="string" variable="$phone"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="phone" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="794"/>
+      <comment value="validation for constraint: minLength" line="798"/>
+      <comment value="validation for constraint: pattern" line="802"/>
+      <comment value="validation for constraint: string" line="806"/>
+    </inline>
+  </method>
+  <method name="getMobile" start="817" end="820" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Mobile value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setMobile" start="826" end="846" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Mobile value"/>
+      <param type="string" variable="$mobile"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="mobile" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="828"/>
+      <comment value="validation for constraint: minLength" line="832"/>
+      <comment value="validation for constraint: pattern" line="836"/>
+      <comment value="validation for constraint: string" line="840"/>
+    </inline>
+  </method>
+  <method name="getEMail" start="851" end="854" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get EMail value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setEMail" start="860" end="876" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set EMail value"/>
+      <param type="string" variable="$eMail"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="eMail" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="862"/>
+      <comment value="validation for constraint: pattern" line="866"/>
+      <comment value="validation for constraint: string" line="870"/>
+    </inline>
+  </method>
+  <method name="getLabelAddress" start="881" end="884" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LabelAddress value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress|null" namespace="\Diglin\Swisspost\StructType" name="LabelAddress|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLabelAddress" start="890" end="894" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LabelAddress value"/>
+      <param type="object" variable="$labelAddress">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="labelAddress" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelAddress" namespace="Diglin\Swisspost\StructType" name="LabelAddress"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="903" end="906" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Recipient" namespace="\Diglin\Swisspost\StructType" name="Recipient"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="911" end="914" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

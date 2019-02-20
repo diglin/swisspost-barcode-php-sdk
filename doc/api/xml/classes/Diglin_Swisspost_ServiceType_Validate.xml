@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\ServiceType\Validate" namespace="Diglin\Swisspost\ServiceType" name="Validate" abstract="false" final="false" start="13" end="51">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType" file="Validate.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType/Validate.php" size="1488" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1a1fd2d698bda51183a070849d3240414c254fe6" relative="ServiceType/Validate.php"/>
+  <docblock>
+    <description compact="This class stands for Validate ServiceType"/>
+    <subpackage value="Services"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractSoapClientBase" namespace="WsdlToPhp\PackageBase" name="AbstractSoapClientBase" unresolved="true"/>
+  <method name="ValidateCombination" start="24" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ValidateCombination"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombination" namespace="\Diglin\Swisspost\StructType" name="ValidateCombination"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ValidateCombination" namespace="Diglin\Swisspost\StructType" name="ValidateCombination"/>
+    </parameter>
+  </method>
+  <method name="getResult" start="39" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the result"/>
+      <see value="AbstractSoapClientBase::getResult()"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationResponse" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationResponse"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

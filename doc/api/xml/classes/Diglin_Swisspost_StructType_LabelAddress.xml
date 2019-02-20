@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\LabelAddress" namespace="Diglin\Swisspost\StructType" name="LabelAddress" abstract="false" final="false" start="15" end="114">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="LabelAddress.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/LabelAddress.php" size="4732" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="90a906bc3475d9e8ab48d2f41c8f241786bbab56" relative="StructType/LabelAddress.php"/>
+  <docblock>
+    <description compact="This class stands for LabelAddress StructType Meta informations extracted from the WSDL - documentation: optional, used to declare a specific address on the label. if omitted, the address data of the recipient is taken. Useful if the address data of the recipient exceeds the length of the label."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="LabelLine" visibility="public" static="false" line="27">
+    <docblock>
+      <description compact="The LabelLine Meta informations extracted from the WSDL - maxOccurs: 5 - minOccurs: 2 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="33" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for LabelAddress"/>
+      <uses value="LabelAddress::setLabelLine()"/>
+      <param type="array" variable="$labelLine" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+    </docblock>
+    <parameter name="labelLine" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getLabelLine" start="42" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LabelLine value"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLabelLine" start="52" end="70" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LabelLine value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$labelLine" of="object">
+        <type full="Diglin\Swisspost\StructType\string" namespace="Diglin\Swisspost\StructType" name="string"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </return>
+    </docblock>
+    <parameter name="labelLine" byreference="false" type="array" default=""/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="54"/>
+      <comment value="validation for constraint: pattern" line="58"/>
+    </inline>
+  </method>
+  <method name="addToLabelLine" start="77" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to LabelLine value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$item"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="79"/>
+      <comment value="validation for constraint: pattern" line="83"/>
+      <comment value="validation for constraint: itemType" line="87"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="102" end="105" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelAddress" namespace="\Diglin\Swisspost\StructType" name="LabelAddress"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="110" end="113" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

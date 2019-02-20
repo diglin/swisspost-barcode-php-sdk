@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\BarcodeDefinition" namespace="Diglin\Swisspost\StructType" name="BarcodeDefinition" abstract="false" final="false" start="15" end="144">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="BarcodeDefinition.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/BarcodeDefinition.php" size="4794" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="ef0b6687aca916a223625e7cfe578218fd9fcd5f" relative="StructType/BarcodeDefinition.php"/>
+  <docblock>
+    <description compact="This class stands for BarcodeDefinition StructType Meta informations extracted from the WSDL - documentation: Represents a BarcodeDefinition for the GenerateBarcode Service."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="BarcodeType" visibility="public" static="false" line="21">
+    <docblock>
+      <description compact="The BarcodeType"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ImageFileType" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The ImageFileType Meta informations extracted from the WSDL - documentation: Defines valid formats of images.">- pattern: [a-zA-Z,0-9]{1,5}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ImageResolution" visibility="public" static="false" line="34">
+    <docblock>
+      <description compact="The ImageResolution"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="44" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for BarcodeDefinition"/>
+      <uses value="BarcodeDefinition::setBarcodeType()"/>
+      <uses value="BarcodeDefinition::setImageFileType()"/>
+      <uses value="BarcodeDefinition::setImageResolution()"/>
+      <param type="string" variable="$barcodeType"/>
+      <param type="string" variable="$imageFileType"/>
+      <param type="int" variable="$imageResolution"/>
+    </docblock>
+    <parameter name="barcodeType" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="imageFileType" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="imageResolution" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getBarcodeType" start="55" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get BarcodeType value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setBarcodeType" start="67" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set BarcodeType value"/>
+      <uses value="\Diglin\Swisspost\EnumType\BarcodeType::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\BarcodeType::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$barcodeType"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="barcodeType" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="69"/>
+    </inline>
+  </method>
+  <method name="getImageFileType" start="80" end="83" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ImageFileType value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setImageFileType" start="89" end="101" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ImageFileType value"/>
+      <param type="string" variable="$imageFileType"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="imageFileType" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="91"/>
+      <comment value="validation for constraint: string" line="95"/>
+    </inline>
+  </method>
+  <method name="getImageResolution" start="106" end="109" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ImageResolution value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setImageResolution" start="115" end="123" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ImageResolution value"/>
+      <param type="int" variable="$imageResolution"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="imageResolution" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="117"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="132" end="135" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\BarcodeDefinition" namespace="\Diglin\Swisspost\StructType" name="BarcodeDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="140" end="143" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

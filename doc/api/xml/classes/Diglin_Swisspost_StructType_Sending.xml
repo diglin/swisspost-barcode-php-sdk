@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Sending" namespace="Diglin\Swisspost\StructType" name="Sending" abstract="false" final="false" start="13" end="173">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Sending.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Sending.php" size="6198" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="ce917d4ab3eb06db2991c4361c6763cc8ba9a276" relative="StructType/Sending.php"/>
+  <docblock>
+    <description compact="This class stands for Sending StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Item" visibility="public" static="false" line="21">
+    <docblock>
+      <description compact="The Item Meta informations extracted from the WSDL - maxOccurs: unbounded"/>
+      <var type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Country" visibility="public" static="false" line="30">
+    <docblock>
+      <description compact="The Country Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The ISO country code.">- pattern: [a-zA-Z]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="SendingID" visibility="public" static="false" line="40">
+    <docblock>
+      <description compact="The SendingID Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 50 - documentation: Excludes unsupported characters.">- pattern: ([^&gt;&lt;?"|:\\/*])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="50" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Sending"/>
+      <uses value="Sending::setItem()"/>
+      <uses value="Sending::setCountry()"/>
+      <uses value="Sending::setSendingID()"/>
+      <param type="array" variable="$item" of="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </param>
+      <param type="string" variable="$country"/>
+      <param type="string" variable="$sendingID"/>
+    </docblock>
+    <parameter name="item" byreference="false" type="array" default=""/>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="sendingID" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getItem" start="61" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Item value"/>
+      <return type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem[]|nu" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setItem" start="71" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Item value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$item" of="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToItem" start="88" end="96" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to Item value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="object" variable="$item">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+    </parameter>
+    <inline>
+      <comment value="validation for constraint: itemType" line="90"/>
+    </inline>
+  </method>
+  <method name="getCountry" start="101" end="104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Country value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCountry" start="110" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Country value"/>
+      <param type="string" variable="$country"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </return>
+    </docblock>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="112"/>
+      <comment value="validation for constraint: string" line="116"/>
+    </inline>
+  </method>
+  <method name="getSendingID" start="127" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get SendingID value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setSendingID" start="136" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set SendingID value"/>
+      <param type="string" variable="$sendingID"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </return>
+    </docblock>
+    <parameter name="sendingID" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="138"/>
+      <comment value="validation for constraint: pattern" line="142"/>
+      <comment value="validation for constraint: string" line="146"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="161" end="164" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Sending" namespace="\Diglin\Swisspost\StructType" name="Sending"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="169" end="172" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

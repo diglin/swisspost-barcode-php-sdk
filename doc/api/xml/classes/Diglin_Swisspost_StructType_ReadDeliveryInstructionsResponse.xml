@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse" namespace="Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse" abstract="false" final="false" start="13" end="121">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReadDeliveryInstructionsResponse.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReadDeliveryInstructionsResponse.php" size="4615" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="27acdcf3dfd1b96bf41dabc736c52d8cb9b0f050" relative="StructType/ReadDeliveryInstructionsResponse.php"/>
+  <docblock>
+    <description compact="This class stands for ReadDeliveryInstructionsResponse StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="DeliveryInstructions" visibility="public" static="false" line="22">
+    <docblock>
+      <description compact="The DeliveryInstructions Meta informations extracted from the WSDL - maxOccurs: unbounded - minOccurs: 0"/>
+      <var type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Errors" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The Errors Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="37" end="42" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReadDeliveryInstructionsResponse"/>
+      <uses value="ReadDeliveryInstructionsResponse::setDeliveryInstructions()"/>
+      <uses value="ReadDeliveryInstructionsResponse::setErrors()"/>
+      <param type="array" variable="$deliveryInstructions" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </param>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+    </docblock>
+    <parameter name="deliveryInstructions" byreference="false" type="array" default=""/>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </constructor>
+  <method name="getDeliveryInstructions" start="47" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DeliveryInstructions value"/>
+      <return type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode[]|nu" namespace="\Diglin\Swisspost\StructType" name="ServiceCode[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDeliveryInstructions" start="57" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DeliveryInstructions value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$deliveryInstructions" of="object">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="deliveryInstructions" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToDeliveryInstructions" start="74" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to DeliveryInstructions value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="object" variable="$item">
+        <type full="\Diglin\Swisspost\StructType\ServiceCode" namespace="\Diglin\Swisspost\StructType" name="ServiceCode"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ServiceCode" namespace="Diglin\Swisspost\StructType" name="ServiceCode"/>
+    </parameter>
+    <inline>
+      <comment value="validation for constraint: itemType" line="76"/>
+    </inline>
+  </method>
+  <method name="getErrors" start="87" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Errors value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType|null" namespace="\Diglin\Swisspost\StructType" name="ErrorsType|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setErrors" start="96" end="100" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Errors value"/>
+      <param type="object" variable="$errors">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="errors" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="109" end="112" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="117" end="120" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="Diglin\Swisspost\StructType" name="ValidateCombinationItem" abstract="false" final="false" start="13" end="151">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ValidateCombinationItem.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ValidateCombinationItem.php" size="5153" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="ee28bc9ba22ba48de89070aecb23cb8e4a0941b7" relative="StructType/ValidateCombinationItem.php"/>
+  <docblock>
+    <description compact="This class stands for ValidateCombinationItem StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="ItemID" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The ItemID Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Unique identifier for a specific item defined by the consumer. | Excludes unsupported characters.">- maxLength: 200
+- pattern: ([^&gt;&lt;?"|:\\/*])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Attributes" visibility="public" static="false" line="31">
+    <docblock>
+      <description compact="The Attributes Meta informations extracted from the WSDL - minOccurs: 0"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Country" visibility="public" static="false" line="40">
+    <docblock>
+      <description compact="The Country Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The ISO country code.">- pattern: [a-zA-Z]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="50" end="56" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ValidateCombinationItem"/>
+      <uses value="ValidateCombinationItem::setItemID()"/>
+      <uses value="ValidateCombinationItem::setAttributes()"/>
+      <uses value="ValidateCombinationItem::setCountry()"/>
+      <param type="string" variable="$itemID"/>
+      <param type="object" variable="$attributes">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </param>
+      <param type="string" variable="$country"/>
+    </docblock>
+    <parameter name="itemID" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="attributes" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Attributes" namespace="Diglin\Swisspost\StructType" name="Attributes"/>
+    </parameter>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getItemID" start="61" end="64" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ItemID value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setItemID" start="70" end="86" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ItemID value"/>
+      <param type="string" variable="$itemID"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </return>
+    </docblock>
+    <parameter name="itemID" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="72"/>
+      <comment value="validation for constraint: pattern" line="76"/>
+      <comment value="validation for constraint: string" line="80"/>
+    </inline>
+  </method>
+  <method name="getAttributes" start="91" end="94" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Attributes value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Attributes|null" namespace="\Diglin\Swisspost\StructType" name="Attributes|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setAttributes" start="100" end="104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Attributes value"/>
+      <param type="object" variable="$attributes">
+        <type full="\Diglin\Swisspost\StructType\Attributes" namespace="\Diglin\Swisspost\StructType" name="Attributes"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </return>
+    </docblock>
+    <parameter name="attributes" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Attributes" namespace="Diglin\Swisspost\StructType" name="Attributes"/>
+    </parameter>
+  </method>
+  <method name="getCountry" start="109" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Country value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCountry" start="118" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Country value"/>
+      <param type="string" variable="$country"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </return>
+    </docblock>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="120"/>
+      <comment value="validation for constraint: string" line="124"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="139" end="142" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ValidateCombinationItem" namespace="\Diglin\Swisspost\StructType" name="ValidateCombinationItem"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="147" end="150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

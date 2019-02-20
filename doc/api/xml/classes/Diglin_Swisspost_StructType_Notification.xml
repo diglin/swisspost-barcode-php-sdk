@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\Notification" namespace="Diglin\Swisspost\StructType" name="Notification" abstract="false" final="false" start="13" end="260">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="Notification.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Notification.php" size="9384" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="989febbd4847d63996cef5c55411710a3c8a4505" relative="StructType/Notification.php"/>
+  <docblock>
+    <description compact="This class stands for Notification StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Type" visibility="public" static="false" line="22">
+    <docblock>
+      <description compact="The Type Meta informations extracted from the WSDL - documentation: Angabe des Medium - use: required"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Communication" visibility="public" static="false" line="27">
+    <docblock>
+      <description compact="The Communication"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Service" visibility="public" static="false" line="35">
+    <docblock>
+      <description compact="The Service Meta informations extracted from the WSDL - documentation: Avisierungs-Code, welcher die Avisierung bezeichnet.">- totalDigits: 20</description>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="FreeText1" visibility="public" static="false" line="45">
+    <docblock>
+      <description compact="The FreeText1 Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Individueller Text 1 für Avisierung. | Excludes unsupported characters.">- maxLength: 160
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="FreeText2" visibility="public" static="false" line="55">
+    <docblock>
+      <description compact="The FreeText2 Meta informations extracted from the WSDL - minOccurs: 0 - documentation: Individueller Text 2 für Avisierung. | Excludes unsupported characters.">- maxLength: 512
+- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Language" visibility="public" static="false" line="60">
+    <docblock>
+      <description compact="The Language"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="76" end="85" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for Notification"/>
+      <uses value="Notification::setType()"/>
+      <uses value="Notification::setCommunication()"/>
+      <uses value="Notification::setService()"/>
+      <uses value="Notification::setFreeText1()"/>
+      <uses value="Notification::setFreeText2()"/>
+      <uses value="Notification::setLanguage()"/>
+      <param type="string" variable="$type"/>
+      <param type="object" variable="$communication">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </param>
+      <param type="int" variable="$service"/>
+      <param type="string" variable="$freeText1"/>
+      <param type="string" variable="$freeText2"/>
+      <param type="string" variable="$language"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="communication" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Communication" namespace="Diglin\Swisspost\StructType" name="Communication"/>
+    </parameter>
+    <parameter name="service" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="freeText1" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="freeText2" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getType" start="90" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Type value"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="setType" start="102" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Type value"/>
+      <uses value="\Diglin\Swisspost\EnumType\NotificationType::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\NotificationType::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$type"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="104"/>
+    </inline>
+  </method>
+  <method name="getCommunication" start="115" end="118" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Communication value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Communication|null" namespace="\Diglin\Swisspost\StructType" name="Communication|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCommunication" start="124" end="128" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Communication value"/>
+      <param type="object" variable="$communication">
+        <type full="\Diglin\Swisspost\StructType\Communication" namespace="\Diglin\Swisspost\StructType" name="Communication"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="communication" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\Communication" namespace="Diglin\Swisspost\StructType" name="Communication"/>
+    </parameter>
+  </method>
+  <method name="getService" start="133" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Service value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setService" start="142" end="154" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Service value"/>
+      <param type="int" variable="$service"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="service" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: totalDigits" line="144"/>
+      <comment value="validation for constraint: int" line="148"/>
+    </inline>
+  </method>
+  <method name="getFreeText1" start="159" end="162" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FreeText1 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFreeText1" start="168" end="184" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FreeText1 value"/>
+      <param type="string" variable="$freeText1"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="freeText1" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="170"/>
+      <comment value="validation for constraint: pattern" line="174"/>
+      <comment value="validation for constraint: string" line="178"/>
+    </inline>
+  </method>
+  <method name="getFreeText2" start="189" end="192" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FreeText2 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFreeText2" start="198" end="214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FreeText2 value"/>
+      <param type="string" variable="$freeText2"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="freeText2" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="200"/>
+      <comment value="validation for constraint: pattern" line="204"/>
+      <comment value="validation for constraint: string" line="208"/>
+    </inline>
+  </method>
+  <method name="getLanguage" start="219" end="222" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Language value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLanguage" start="231" end="239" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Language value"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="233"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="248" end="251" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\Notification" namespace="\Diglin\Swisspost\StructType" name="Notification"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="256" end="259" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

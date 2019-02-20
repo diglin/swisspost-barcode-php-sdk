@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Diglin\Swisspost\StructType\LabelAddress</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#Diglin_Swisspost_StructType">Diglin\Swisspost\StructType</a>
+          </li>
+          <li class="separator">LabelAddress</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#violations">Violations</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/StructType/LabelAddress.php.html#line15">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Diglin\Swisspost\StructType\</small>LabelAddress</h1>
+        <h4>This class stands for LabelAddress StructType Meta informations extracted from the WSDL - documentation: optional, used to declare a specific address on the label. if omitted, the address data of the recipient is taken. Useful if the address data of the recipient exceeds the length of the label.</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class LabelAddress
+                extends AbstractStructBase
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$LabelLine</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__construct.html">__construct</a>()
+                    </li><li>public array <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/getLabelLine.html">getLabelLine</a>()
+                    </li><li>public LabelAddress <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/setLabelLine.html">setLabelLine</a>()
+                    </li><li>public LabelAddress <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/addToLabelLine.html">addToLabelLine</a>()
+                    </li><li>public static LabelAddress <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__set_state.html">__set_state</a>()
+                    </li><li>public string <a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__toString.html">__toString</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>WsdlToPhp\PackageBase\AbstractStructBase</li>
+          </ul>
+        </div>
+        <h2 id="violations">Violations</h2>
+        <div class="styled">
+          <h3>PHPMessDetector</h3>
+          <table class="styled">
+            <thead>
+              <tr>
+                <th>Line</th>
+                <th>Rule</th>
+                <th>Message</th>
+              </tr>
+            </thead>
+            <tr>
+              <td class="line">52 - 70</td>
+              <td>
+                <a href="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" target="_blank" title="Code Size Rules">CyclomaticComplexity</a>
+              </td>
+              <td>The method setLabelLine() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.</td>
+            </tr>
+            <tr>
+              <td class="line">77 - 93</td>
+              <td>
+                <a href="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" target="_blank" title="Code Size Rules">CyclomaticComplexity</a>
+              </td>
+              <td>The method addToLabelLine() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.</td>
+            </tr>
+          </table>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="LabelLine"><strong>$LabelLine</strong>
+                —
+                array<br/><span class="indent">The LabelLine Meta informations extracted from the WSDL - maxOccurs: 5 - minOccurs: 2 - maxLength: 35 - documentation: Excludes unsupported characters.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__construct.html">__construct()</a>
+                — Constructor method for LabelAddress</li>
+            <li id="__set_state"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__set_state.html">__set_state()</a>
+                — Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values</li>
+            <li id="__toString"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/__toString.html">__toString()</a>
+                — Method returning the class name</li>
+            <li id="addToLabelLine"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/addToLabelLine.html">addToLabelLine()</a>
+                — Add item to LabelLine value</li>
+            <li id="getLabelLine"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/getLabelLine.html">getLabelLine()</a>
+                — Get LabelLine value</li>
+            <li id="setLabelLine"><a title="Diglin\Swisspost\StructType\LabelAddress" href="../classes/Diglin_Swisspost_StructType_LabelAddress/setLabelLine.html">setLabelLine()</a>
+                — Set LabelLine value</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.2 - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

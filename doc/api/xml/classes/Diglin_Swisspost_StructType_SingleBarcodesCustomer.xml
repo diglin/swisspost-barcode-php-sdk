@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="Diglin\Swisspost\StructType" name="SingleBarcodesCustomer" abstract="false" final="false" start="13" end="382">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="SingleBarcodesCustomer.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/SingleBarcodesCustomer.php" size="15389" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="4a91a7d59ae5a763bf212d4060f31d0265b12fa9" relative="StructType/SingleBarcodesCustomer.php"/>
+  <docblock>
+    <description compact="This class stands for SingleBarcodesCustomer StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Name1" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The Name1 Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Name2" visibility="public" static="false" line="33">
+    <docblock>
+      <description compact="The Name2 Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Street" visibility="public" static="false" line="42">
+    <docblock>
+      <description compact="The Street Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="POBox" visibility="public" static="false" line="52">
+    <docblock>
+      <description compact="The POBox Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ZIP" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="The ZIP Meta informations extracted from the WSDL - maxLength: 10 - totalDigits: 6 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="City" visibility="public" static="false" line="71">
+    <docblock>
+      <description compact="The City Meta informations extracted from the WSDL - maxLength: 25 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Country" visibility="public" static="false" line="80">
+    <docblock>
+      <description compact="The Country Meta informations extracted from the WSDL - minOccurs: 0 - documentation: The ISO country code.">- pattern: [a-zA-Z]{2}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="DomicilePostOffice" visibility="public" static="false" line="90">
+    <docblock>
+      <description compact="The DomicilePostOffice Meta informations extracted from the WSDL - minOccurs: 0 - maxLength: 35 - documentation: Excludes unsupported characters.">- pattern: ([^\*|\\|\{|\}|\[|\]|=|&gt;|&lt;])</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="110" end="121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for SingleBarcodesCustomer"/>
+      <uses value="SingleBarcodesCustomer::setName1()"/>
+      <uses value="SingleBarcodesCustomer::setName2()"/>
+      <uses value="SingleBarcodesCustomer::setStreet()"/>
+      <uses value="SingleBarcodesCustomer::setPOBox()"/>
+      <uses value="SingleBarcodesCustomer::setZIP()"/>
+      <uses value="SingleBarcodesCustomer::setCity()"/>
+      <uses value="SingleBarcodesCustomer::setCountry()"/>
+      <uses value="SingleBarcodesCustomer::setDomicilePostOffice()"/>
+      <param type="string" variable="$name1"/>
+      <param type="string" variable="$name2"/>
+      <param type="string" variable="$street"/>
+      <param type="string" variable="$pOBox"/>
+      <param type="string" variable="$zIP"/>
+      <param type="string" variable="$city"/>
+      <param type="string" variable="$country"/>
+      <param type="string" variable="$domicilePostOffice"/>
+    </docblock>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="domicilePostOffice" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getName1" start="126" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name1 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName1" start="135" end="151" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name1 value"/>
+      <param type="string" variable="$name1"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="name1" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="137"/>
+      <comment value="validation for constraint: pattern" line="141"/>
+      <comment value="validation for constraint: string" line="145"/>
+    </inline>
+  </method>
+  <method name="getName2" start="156" end="159" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Name2 value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setName2" start="165" end="181" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Name2 value"/>
+      <param type="string" variable="$name2"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="name2" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="167"/>
+      <comment value="validation for constraint: pattern" line="171"/>
+      <comment value="validation for constraint: string" line="175"/>
+    </inline>
+  </method>
+  <method name="getStreet" start="186" end="189" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Street value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setStreet" start="195" end="211" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Street value"/>
+      <param type="string" variable="$street"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="street" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="197"/>
+      <comment value="validation for constraint: pattern" line="201"/>
+      <comment value="validation for constraint: string" line="205"/>
+    </inline>
+  </method>
+  <method name="getPOBox" start="216" end="219" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get POBox value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPOBox" start="225" end="241" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set POBox value"/>
+      <param type="string" variable="$pOBox"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="pOBox" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="227"/>
+      <comment value="validation for constraint: pattern" line="231"/>
+      <comment value="validation for constraint: string" line="235"/>
+    </inline>
+  </method>
+  <method name="getZIP" start="246" end="249" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ZIP value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setZIP" start="255" end="275" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ZIP value"/>
+      <param type="string" variable="$zIP"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="zIP" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="257"/>
+      <comment value="validation for constraint: totalDigits" line="261"/>
+      <comment value="validation for constraint: pattern" line="265"/>
+      <comment value="validation for constraint: string" line="269"/>
+    </inline>
+  </method>
+  <method name="getCity" start="280" end="283" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get City value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCity" start="289" end="305" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set City value"/>
+      <param type="string" variable="$city"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="city" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="291"/>
+      <comment value="validation for constraint: pattern" line="295"/>
+      <comment value="validation for constraint: string" line="299"/>
+    </inline>
+  </method>
+  <method name="getCountry" start="310" end="313" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Country value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setCountry" start="319" end="331" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Country value"/>
+      <param type="string" variable="$country"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="country" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="321"/>
+      <comment value="validation for constraint: string" line="325"/>
+    </inline>
+  </method>
+  <method name="getDomicilePostOffice" start="336" end="339" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get DomicilePostOffice value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setDomicilePostOffice" start="345" end="361" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set DomicilePostOffice value"/>
+      <param type="string" variable="$domicilePostOffice"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="domicilePostOffice" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: maxLength" line="347"/>
+      <comment value="validation for constraint: pattern" line="351"/>
+      <comment value="validation for constraint: string" line="355"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="370" end="373" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\SingleBarcodesCustomer" namespace="\Diglin\Swisspost\StructType" name="SingleBarcodesCustomer"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="378" end="381" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

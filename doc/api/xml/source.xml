@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<source xmlns="http://xml.phpdox.net/src">
+  <dir name="/Users/sylvainraye/Sites/git/swisspost/src">
+    <file name="NotificationService.php" size="702" time="2019-01-01T23:52:33+01:00" unixtime="1546383153" sha1="aae92bd313eec88630944324af090d95b75a1e26" xml="tokens/NotificationService.php.xml"/>
+    <dir name="StructType">
+      <file name="ValidateCombinationItem.php" size="5153" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="ee28bc9ba22ba48de89070aecb23cb8e4a0941b7" xml="tokens/StructType/ValidateCombinationItem.php.xml"/>
+      <file name="ReadAllowedServicesServiceGroups.php" size="4424" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="1b01018243820916fbd2a420483edf7a31a393cc" xml="tokens/StructType/ReadAllowedServicesServiceGroups.php.xml"/>
+      <file name="ReadLabelLayoutsResponse.php" size="4340" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="add6f8167b8c03b9904da7d7851e0ca800943320" xml="tokens/StructType/ReadLabelLayoutsResponse.php.xml"/>
+      <file name="ServiceCodeAttributes.php" size="15162" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="7cae209d27655d6ce8d244903406ad2d43509e37" xml="tokens/StructType/ServiceCodeAttributes.php.xml"/>
+      <file name="AdditionalData.php" size="4464" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="cc4a9967854a00a4451c0abddb64267ee1d7eca6" xml="tokens/StructType/AdditionalData.php.xml"/>
+      <file name="SingleBarcodesResponseItem.php" size="3498" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="ad8ca865fc776782b56f862a2a7b108a4ba0b831" xml="tokens/StructType/SingleBarcodesResponseItem.php.xml"/>
+      <file name="ReadLabelLayouts.php" size="4554" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="ac48f5ce0c583c2e207533c001c79d3d3ad8ba48" xml="tokens/StructType/ReadLabelLayouts.php.xml"/>
+      <file name="GenerateLabelResponse.php" size="1869" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="413ad0d8015dd9665146cec2ecc82aaade74577b" xml="tokens/StructType/GenerateLabelResponse.php.xml"/>
+      <file name="Recipient.php" size="36594" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="337f153b43ff2f7b3082dc81ffe1dff1eef6e07c" xml="tokens/StructType/Recipient.php.xml"/>
+      <file name="GenerateLabelResponseDefinition.php" size="2170" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="cc42f1469154d4b0a3cad5ccffe9818ecdb45fbf" xml="tokens/StructType/GenerateLabelResponseDefinition.php.xml"/>
+      <file name="GenerateSingleBarcodesEnvelope.php" size="3887" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="fae974f2ac5f4d30a84c7bbde9539cf47d0fe032" xml="tokens/StructType/GenerateSingleBarcodesEnvelope.php.xml"/>
+      <file name="ReadServiceGroupsResponse.php" size="4311" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="16af8018037e2313925670550ef5a9be9b8ffff0" xml="tokens/StructType/ReadServiceGroupsResponse.php.xml"/>
+      <file name="Envelope.php" size="3733" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="c668ea292b68210312ffa3fc8f392425064f0bb8" xml="tokens/StructType/Envelope.php.xml"/>
+      <file name="Attributes.php" size="3382" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="e5c6a9e5801de1cf1f94e32b8af78605c882675e" xml="tokens/StructType/Attributes.php.xml"/>
+      <file name="Sending.php" size="6198" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="ce917d4ab3eb06db2991c4361c6763cc8ba9a276" xml="tokens/StructType/Sending.php.xml"/>
+      <file name="ReadAllowedServicesByFrankingLicenseResponse.php" size="4804" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="6ff3cfaa83c289ef4253e52db6e9c4f4cb4be8e9" xml="tokens/StructType/ReadAllowedServicesByFrankingLicenseResponse.php.xml"/>
+      <file name="SingleBarcodesFileInfos.php" size="5940" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="8b93cc2ed95f0b629e3ea2b964b4ba143d446529" xml="tokens/StructType/SingleBarcodesFileInfos.php.xml"/>
+      <file name="ReadBasicServices.php" size="3128" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="8a38177b7a99583a14b3f14b9100f074d88b49a4" xml="tokens/StructType/ReadBasicServices.php.xml"/>
+      <file name="LabelLayoutResponse.php" size="5506" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1be3e1a965e131b2e5e0a93214bc99be1366bb06" xml="tokens/StructType/LabelLayoutResponse.php.xml"/>
+      <file name="GenerateLabelFileInfos.php" size="5922" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="93857f883289c6a98be7a8f909f5be9fd100461f" xml="tokens/StructType/GenerateLabelFileInfos.php.xml"/>
+      <file name="GenerateSingleBarcodes.php" size="3136" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="a0308f74bde73e8018bf982082c68b2b219ec052" xml="tokens/StructType/GenerateSingleBarcodes.php.xml"/>
+      <file name="ReadAllowedServicesByFrankingLicense.php" size="3785" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="4753eefb339f85aa3a1d807c8141977097afb7a1" xml="tokens/StructType/ReadAllowedServicesByFrankingLicense.php.xml"/>
+      <file name="LabelData.php" size="1845" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="97a8b30cfd7de2a3e87f8bdac57ee7c6bdc1ff23" xml="tokens/StructType/LabelData.php.xml"/>
+      <file name="GenerateLabelDefinition.php" size="5751" time="2019-01-13T13:17:08+01:00" unixtime="1547381828" sha1="17d7e6cd71ab5049038d2710e802603f3631373a" xml="tokens/StructType/GenerateLabelDefinition.php.xml"/>
+      <file name="Dimensions.php" size="2404" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="33f8b4e4088ec2abbdef501ed8f7e0ee4e9e0f83" xml="tokens/StructType/Dimensions.php.xml"/>
+      <file name="ReadAdditionalServices.php" size="4638" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="28e60385217a4f296867b2d7de64a1e33d43b336" xml="tokens/StructType/ReadAdditionalServices.php.xml"/>
+      <file name="LabelDefinition.php" size="2413" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="f7f9a4e9dd3ff153028184cb845e2e9726956858" xml="tokens/StructType/LabelDefinition.php.xml"/>
+      <file name="GenerateLabel.php" size="3010" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="b96ed0d83e5c3dda89fe78c3b15d268223023a59" xml="tokens/StructType/GenerateLabel.php.xml"/>
+      <file name="GenerateSingleBarcodesResponse.php" size="1923" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="3ed9cdcfc3eeddedfdfc174644f8891c01335366" xml="tokens/StructType/GenerateSingleBarcodesResponse.php.xml"/>
+      <file name="GenerateBarcode.php" size="3146" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="9a1b22a4c0e2528bf448f6011d759154760ad47e" xml="tokens/StructType/GenerateBarcode.php.xml"/>
+      <file name="LabelResponseItem.php" size="3426" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="53fae5ced3b0e8384df473a2004813fa09e19533" xml="tokens/StructType/LabelResponseItem.php.xml"/>
+      <file name="BasicService.php" size="4995" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="937cf112e759c443fb205dc765c5b906d1346dff" xml="tokens/StructType/BasicService.php.xml"/>
+      <file name="ReadDeliveryInstructionsResponse.php" size="4615" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="27acdcf3dfd1b96bf41dabc736c52d8cb9b0f050" xml="tokens/StructType/ReadDeliveryInstructionsResponse.php.xml"/>
+      <file name="ValidateCombinationResponse.php" size="1905" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="7551d0bddc7e966604d702b52e6fd89ef18b8a8b" xml="tokens/StructType/ValidateCombinationResponse.php.xml"/>
+      <file name="ResponseItem.php" size="4573" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="585ce54b4541146c3f5e314cb98d80f874d498a7" xml="tokens/StructType/ResponseItem.php.xml"/>
+      <file name="BarcodeResponseData.php" size="7466" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="23570ece0f6a888ae210bb5dcec490dab7a1ad3f" xml="tokens/StructType/BarcodeResponseData.php.xml"/>
+      <file name="GenerateLabelEnvelope.php" size="3753" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="d85f20f5ee4090a210e7cbed751d00bb08a0fb3b" xml="tokens/StructType/GenerateLabelEnvelope.php.xml"/>
+      <file name="SingleBarcodesResponseDefinition.php" size="2177" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="ed527cacd55e3d3cf871a9553348fb7d555df3b2" xml="tokens/StructType/SingleBarcodesResponseDefinition.php.xml"/>
+      <file name="ReadServiceGroups.php" size="2152" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="76d75ef3653fc26c39dbeb076dd78d9a74752b98" xml="tokens/StructType/ReadServiceGroups.php.xml"/>
+      <file name="AdditionalINFOS.php" size="3454" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="625b61b6781c75133298c1fb443a45861ab47582" xml="tokens/StructType/AdditionalINFOS.php.xml"/>
+      <file name="ReadBasicServicesResponse.php" size="4311" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="fb6975281513c9c22b77e22f6118b2cb9262bdfc" xml="tokens/StructType/ReadBasicServicesResponse.php.xml"/>
+      <file name="Barcodes.php" size="2712" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="58bd63a7d8bb8bf6519806819d5f67954dcd3c2a" xml="tokens/StructType/Barcodes.php.xml"/>
+      <file name="ErrorsType.php" size="3153" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="e259e63ca8e6681853f5173d6e861177e6f19e9e" xml="tokens/StructType/ErrorsType.php.xml"/>
+      <file name="GenerateSending.php" size="4827" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="cb1db95eea7a194f62354290cf80ac3d82ab5ab0" xml="tokens/StructType/GenerateSending.php.xml"/>
+      <file name="SingleBarcodesCustomer.php" size="15389" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="4a91a7d59ae5a763bf212d4060f31d0265b12fa9" xml="tokens/StructType/SingleBarcodesCustomer.php.xml"/>
+      <file name="Data.php" size="1767" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="9ebca9636c6b471d3aa773f72b944bc7920cf40e" xml="tokens/StructType/Data.php.xml"/>
+      <file name="Communication.php" size="4920" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="7d35ce8bf4ec73a9b1d6777b1849e08acc9e5998" xml="tokens/StructType/Communication.php.xml"/>
+      <file name="ReadAdditionalServicesResponse.php" size="4506" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="5d205bbbe2a1635eb16ef89cb753f88f915378b5" xml="tokens/StructType/ReadAdditionalServicesResponse.php.xml"/>
+      <file name="LabelAddress.php" size="4732" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="90a906bc3475d9e8ab48d2f41c8f241786bbab56" xml="tokens/StructType/LabelAddress.php.xml"/>
+      <file name="GenerateProvider.php" size="1865" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="7ecee5e8152a04eb1a7bac23092df9ca8e425306" xml="tokens/StructType/GenerateProvider.php.xml"/>
+      <file name="WarningsType.php" size="3233" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="5b6cdde0fe1314d9d7bc368a1f70d81809e76fc2" xml="tokens/StructType/WarningsType.php.xml"/>
+      <file name="Item.php" size="10611" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="2c6a4f0fcfb721ebbd9ace829d4f1f6a253b4f52" xml="tokens/StructType/Item.php.xml"/>
+      <file name="UNNumbers.php" size="3621" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="6ed486043e56f62b8193e32c21cacde7f4fa92e0" xml="tokens/StructType/UNNumbers.php.xml"/>
+      <file name="ServiceGroup.php" size="3563" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="8065c41041bcf2e9d26f38c4c6a27d027109edf5" xml="tokens/StructType/ServiceGroup.php.xml"/>
+      <file name="ReturnInfoType.php" size="6409" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="ad84882bb726abef84b33072628ccd58f9b7611c" xml="tokens/StructType/ReturnInfoType.php.xml"/>
+      <file name="ValidateCombination.php" size="2980" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="3e34281d1e346d4838e58a35e4f6fe8285e78209" xml="tokens/StructType/ValidateCombination.php.xml"/>
+      <file name="Provider.php" size="1769" time="2019-01-11T00:06:00+01:00" unixtime="1547161560" sha1="5537621c51f2cd9e47843975ee295892fd24fbb7" xml="tokens/StructType/Provider.php.xml"/>
+      <file name="ReadDeliveryInstructions.php" size="4666" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="205316845090de0dcd1c2ab9e65195baa06fb2c8" xml="tokens/StructType/ReadDeliveryInstructions.php.xml"/>
+      <file name="GenerateLabelCustomer.php" size="23627" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="199f8e234d5dbde374b077d286a55f787f58d6af" xml="tokens/StructType/GenerateLabelCustomer.php.xml"/>
+      <file name="Notification.php" size="9384" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="989febbd4847d63996cef5c55411710a3c8a4505" xml="tokens/StructType/Notification.php.xml"/>
+      <file name="GenerateBarcodeResponse.php" size="1954" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="d3186c44efd149cd389b50f1cb7d3ecb2c168d4b" xml="tokens/StructType/GenerateBarcodeResponse.php.xml"/>
+      <file name="MessageType.php" size="3910" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="e545c7f74ebc16cb501f8fd0e16b0e0b8ce6f91a" xml="tokens/StructType/MessageType.php.xml"/>
+      <file name="ServiceCode.php" size="3821" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1305772860a62622fecb93b6bf3f175b6afa0b8f" xml="tokens/StructType/ServiceCode.php.xml"/>
+      <file name="BarcodeDefinition.php" size="4794" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="ef0b6687aca916a223625e7cfe578218fd9fcd5f" xml="tokens/StructType/BarcodeDefinition.php.xml"/>
+      <file name="SingleBarcodesDefinition.php" size="3536" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="24d4ec53b1066a211dc0512dfaa3b5f01bf40ec2" xml="tokens/StructType/SingleBarcodesDefinition.php.xml"/>
+    </dir>
+    <dir name="EnumType">
+      <file name="LogoAspectRatio.php" size="1254" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="b239f05c0209c6d3c00d97f0796c6e1c0a15d404" xml="tokens/EnumType/LogoAspectRatio.php.xml"/>
+      <file name="LogoRotation.php" size="1529" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="62f85df41953c3264e6c42ef152218caa0e12e16" xml="tokens/EnumType/LogoRotation.php.xml"/>
+      <file name="NotificationType.php" size="1154" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="a47be7f72815a33fed9aa81f4220764b4a7553a1" xml="tokens/EnumType/NotificationType.php.xml"/>
+      <file name="BarcodeType.php" size="1440" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="40b565c9cbd38775ee61ad177ade3677899aa93b" xml="tokens/EnumType/BarcodeType.php.xml"/>
+      <file name="Language.php" size="1619" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="c883bb431b843a58d229e473a067cfd9ceb81bf7" xml="tokens/EnumType/Language.php.xml"/>
+      <file name="LogoHorizontalAlign.php" size="1304" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="56e78c5bb8fcae1384036b8e141b9612830a9326" xml="tokens/EnumType/LogoHorizontalAlign.php.xml"/>
+      <file name="LogoVerticalAlign.php" size="1249" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="29ed5804293583627f243d5ab3a9ecc462fe64af" xml="tokens/EnumType/LogoVerticalAlign.php.xml"/>
+      <file name="PrintAddressesType.php" size="1833" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="c1c890d062dfe1968a65a319ee5d4c665614674c" xml="tokens/EnumType/PrintAddressesType.php.xml"/>
+    </dir>
+    <dir name="ServiceType">
+      <file name="Generate.php" size="3189" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="c9bf130591b82f0da5df4825444f24cac2eca435" xml="tokens/ServiceType/Generate.php.xml"/>
+      <file name="Read.php" size="5988" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="68b1e98dd2686a42a9099b803d474a07755b6d47" xml="tokens/ServiceType/Read.php.xml"/>
+      <file name="Validate.php" size="1488" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="1a1fd2d698bda51183a070849d3240414c254fe6" xml="tokens/ServiceType/Validate.php.xml"/>
+    </dir>
+    <file name="Parameters.php" size="2739" time="2019-01-09T23:35:36+01:00" unixtime="1547073336" sha1="20d807d046b1209d5d9bb4d1bd9066441e051cf5" xml="tokens/Parameters.php.xml"/>
+    <file name="ClassMap.php" size="6364" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="391b17b8b9cdee31965c7f609b0534290216f4a5" xml="tokens/ClassMap.php.xml"/>
+  </dir>
+</source>

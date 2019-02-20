@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ErrorsType" namespace="Diglin\Swisspost\StructType" name="ErrorsType" abstract="false" final="false" start="15" end="94">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ErrorsType.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ErrorsType.php" size="3153" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="e259e63ca8e6681853f5173d6e861177e6f19e9e" relative="StructType/ErrorsType.php"/>
+  <docblock>
+    <description compact="This class stands for ErrorsType StructType Meta informations extracted from the WSDL - documentation: Structure containing a list of occurred business errors."/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Error" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The Error Meta informations extracted from the WSDL - maxOccurs: unbounded"/>
+      <var type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="29" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ErrorsType"/>
+      <uses value="ErrorsType::setError()"/>
+      <param type="array" variable="$error" of="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </param>
+    </docblock>
+    <parameter name="error" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getError" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Error value"/>
+      <return type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType[]|nu" namespace="\Diglin\Swisspost\StructType" name="MessageType[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setError" start="48" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Error value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$error" of="object">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </return>
+    </docblock>
+    <parameter name="error" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToError" start="65" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to Error value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="object" variable="$item">
+        <type full="\Diglin\Swisspost\StructType\MessageType" namespace="\Diglin\Swisspost\StructType" name="MessageType"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\MessageType" namespace="Diglin\Swisspost\StructType" name="MessageType"/>
+    </parameter>
+    <inline>
+      <comment value="validation for constraint: itemType" line="67"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="82" end="85" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ErrorsType" namespace="\Diglin\Swisspost\StructType" name="ErrorsType"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="90" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

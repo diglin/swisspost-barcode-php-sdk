@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense" abstract="false" final="false" start="13" end="113">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="ReadAllowedServicesByFrankingLicense.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ReadAllowedServicesByFrankingLicense.php" size="3785" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="4753eefb339f85aa3a1d807c8141977097afb7a1" relative="StructType/ReadAllowedServicesByFrankingLicense.php"/>
+  <docblock>
+    <description compact="This class stands for ReadAllowedServicesByFrankingLicense StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="FrankingLicense" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The FrankingLicense Meta informations extracted from the WSDL - minOccurs: 1 - documentation: Defines a franking license.">- pattern: [0-9]{8}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="Language" visibility="public" static="false" line="28">
+    <docblock>
+      <description compact="The Language"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="36" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for ReadAllowedServicesByFrankingLicense"/>
+      <uses value="ReadAllowedServicesByFrankingLicense::setFrankingLicense()"/>
+      <uses value="ReadAllowedServicesByFrankingLicense::setLanguage()"/>
+      <param type="string" variable="$frankingLicense"/>
+      <param type="string" variable="$language"/>
+    </docblock>
+    <parameter name="frankingLicense" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getFrankingLicense" start="46" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FrankingLicense value"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="setFrankingLicense" start="55" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FrankingLicense value"/>
+      <param type="string" variable="$frankingLicense"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="\Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense"/>
+      </return>
+    </docblock>
+    <parameter name="frankingLicense" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="57"/>
+      <comment value="validation for constraint: string" line="61"/>
+    </inline>
+  </method>
+  <method name="getLanguage" start="72" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Language value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLanguage" start="84" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Language value"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\Language::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$language"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="\Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense"/>
+      </return>
+    </docblock>
+    <parameter name="language" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="86"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="101" end="104" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="\Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="109" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

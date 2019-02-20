@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\EnumType\Language" namespace="Diglin\Swisspost\EnumType" name="Language" abstract="false" final="false" start="13" end="70">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/EnumType" file="Language.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/EnumType/Language.php" size="1619" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="c883bb431b843a58d229e473a067cfd9ceb81bf7" relative="EnumType/Language.php"/>
+  <docblock>
+    <description compact="This class stands for Language EnumType Meta informations extracted from the WSDL - documentation: Represents the end-users language. The service returns all localized texts including error-messages in the selected language."/>
+    <subpackage value="Enumerations"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <constant type="string" name="VALUE_DE" value="'de'">
+    <docblock>
+      <description compact="Constant for value 'de'"/>
+      <return description="'de'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_FR" value="'fr'">
+    <docblock>
+      <description compact="Constant for value 'fr'"/>
+      <return description="'fr'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_IT" value="'it'">
+    <docblock>
+      <description compact="Constant for value 'it'"/>
+      <return description="'it'" type="string"/>
+    </docblock>
+  </constant>
+  <constant type="string" name="VALUE_EN" value="'en'">
+    <docblock>
+      <description compact="Constant for value 'en'"/>
+      <return description="'en'" type="string"/>
+    </docblock>
+  </constant>
+  <method name="valueIsValid" start="41" end="44" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return true if value is allowed"/>
+      <uses value="self::getValidValues()"/>
+      <param description="value" type="mixed" variable="$value"/>
+      <return description="true|false" type="object">
+        <type full="Diglin\Swisspost\EnumType\bool" namespace="Diglin\Swisspost\EnumType" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getValidValues" start="53" end="61" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Return allowed values"/>
+      <uses value="self::VALUE_DE"/>
+      <uses value="self::VALUE_FR"/>
+      <uses value="self::VALUE_IT"/>
+      <uses value="self::VALUE_EN"/>
+      <return type="array" of="object">
+        <type full="Diglin\Swisspost\EnumType\string" namespace="Diglin\Swisspost\EnumType" name="string"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

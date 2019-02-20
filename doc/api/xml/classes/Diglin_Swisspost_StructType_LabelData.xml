@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\LabelData" namespace="Diglin\Swisspost\StructType" name="LabelData" abstract="false" final="false" start="13" end="68">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="LabelData.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/LabelData.php" size="1845" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="97a8b30cfd7de2a3e87f8bdac57ee7c6bdc1ff23" relative="StructType/LabelData.php"/>
+  <docblock>
+    <description compact="This class stands for LabelData StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="Provider" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The Provider"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateProvider" namespace="\Diglin\Swisspost\StructType" name="GenerateProvider"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="25" end="29" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for LabelData"/>
+      <uses value="LabelData::setProvider()"/>
+      <param type="object" variable="$provider">
+        <type full="\Diglin\Swisspost\StructType\GenerateProvider" namespace="\Diglin\Swisspost\StructType" name="GenerateProvider"/>
+      </param>
+    </docblock>
+    <parameter name="provider" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateProvider" namespace="Diglin\Swisspost\StructType" name="GenerateProvider"/>
+    </parameter>
+  </constructor>
+  <method name="getProvider" start="34" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Provider value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateProvider|null" namespace="\Diglin\Swisspost\StructType" name="GenerateProvider|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setProvider" start="43" end="47" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Provider value"/>
+      <param type="object" variable="$provider">
+        <type full="\Diglin\Swisspost\StructType\GenerateProvider" namespace="\Diglin\Swisspost\StructType" name="GenerateProvider"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelData" namespace="\Diglin\Swisspost\StructType" name="LabelData"/>
+      </return>
+    </docblock>
+    <parameter name="provider" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateProvider" namespace="Diglin\Swisspost\StructType" name="GenerateProvider"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="56" end="59" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelData" namespace="\Diglin\Swisspost\StructType" name="LabelData"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="64" end="67" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

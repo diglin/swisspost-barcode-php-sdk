@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2019-01-13T20:36:51+01:00">
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/AdditionalData.php">
+    <violation beginline="59" endline="75" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AdditionalData" method="setType" priority="3">
+      The method setType() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="89" endline="105" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="AdditionalData" method="setValue" priority="3">
+      The method setValue() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Communication.php">
+    <violation beginline="60" endline="76" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Communication" method="setEmail" priority="3">
+      The method setEmail() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="90" endline="110" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Communication" method="setMobile" priority="3">
+      The method setMobile() has a Cyclomatic Complexity of 14. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="90" endline="110" rule="NPathComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="Communication" method="setMobile" priority="3">
+      The method setMobile() has an NPath complexity of 270. The configured NPath complexity threshold is 200.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateLabelCustomer.php">
+    <violation beginline="13" endline="597" rule="ExcessivePublicCount" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivepubliccount" class="GenerateLabelCustomer" priority="3">
+      The class GenerateLabelCustomer has 45 public methods and attributes. Consider reducing the number of public items to less than 45.
+    </violation>
+    <violation beginline="13" endline="597" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="GenerateLabelCustomer" priority="3">
+      The class GenerateLabelCustomer has an overall complexity of 115 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="167" endline="184" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveparameterlist" class="GenerateLabelCustomer" method="__construct" priority="3">
+      The method __construct has 14 parameters. Consider reducing the number of parameters to less than 10.
+    </violation>
+    <violation beginline="198" endline="214" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setName1" priority="3">
+      The method setName1() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="228" endline="244" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setName2" priority="3">
+      The method setName2() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="258" endline="274" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setStreet" priority="3">
+      The method setStreet() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="288" endline="304" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setPOBox" priority="3">
+      The method setPOBox() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="318" endline="338" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setZIP" priority="3">
+      The method setZIP() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="352" endline="368" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setCity" priority="3">
+      The method setCity() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="430" endline="446" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setLogoFormat" priority="3">
+      The method setLogoFormat() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="560" endline="576" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateLabelCustomer" method="setDomicilePostOffice" priority="3">
+      The method setDomicilePostOffice() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateSending.php">
+    <violation beginline="58" endline="74" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="GenerateSending" method="setSendingID" priority="3">
+      The method setSendingID() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Item.php">
+    <violation beginline="111" endline="127" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Item" method="setItemID" priority="3">
+      The method setItemID() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/LabelAddress.php">
+    <violation beginline="52" endline="70" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="LabelAddress" method="setLabelLine" priority="3">
+      The method setLabelLine() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="77" endline="93" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="LabelAddress" method="addToLabelLine" priority="3">
+      The method addToLabelLine() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Notification.php">
+    <violation beginline="168" endline="184" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Notification" method="setFreeText1" priority="3">
+      The method setFreeText1() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="198" endline="214" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Notification" method="setFreeText2" priority="3">
+      The method setFreeText2() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Recipient.php">
+    <violation beginline="13" endline="915" rule="ExcessivePublicCount" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessivepubliccount" class="Recipient" priority="3">
+      The class Recipient has 66 public methods and attributes. Consider reducing the number of public items to less than 45.
+    </violation>
+    <violation beginline="13" endline="915" rule="TooManyFields" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#toomanyfields" class="Recipient" priority="3">
+      The class Recipient has 21 fields. Consider redesigning Recipient to keep the number of fields under 15.
+    </violation>
+    <violation beginline="13" endline="915" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="Recipient" priority="3">
+      The class Recipient has an overall complexity of 213 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="260" endline="284" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveparameterlist" class="Recipient" method="__construct" priority="3">
+      The method __construct has 21 parameters. Consider reducing the number of parameters to less than 10.
+    </violation>
+    <violation beginline="298" endline="318" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setZIP" priority="3">
+      The method setZIP() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="332" endline="348" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setPostIdent" priority="3">
+      The method setPostIdent() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="362" endline="378" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setTitle" priority="3">
+      The method setTitle() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="414" endline="430" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setName1" priority="3">
+      The method setName1() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="444" endline="460" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setFirstName" priority="3">
+      The method setFirstName() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="474" endline="490" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setName2" priority="3">
+      The method setName2() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="504" endline="520" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setName3" priority="3">
+      The method setName3() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="534" endline="550" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setAddressSuffix" priority="3">
+      The method setAddressSuffix() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="564" endline="580" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setStreet" priority="3">
+      The method setStreet() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="594" endline="610" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setHouseNo" priority="3">
+      The method setHouseNo() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="624" endline="640" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setPOBox" priority="3">
+      The method setPOBox() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="654" endline="670" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setFloorNo" priority="3">
+      The method setFloorNo() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="710" endline="726" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setCity" priority="3">
+      The method setCity() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="792" endline="812" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setPhone" priority="3">
+      The method setPhone() has a Cyclomatic Complexity of 14. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="792" endline="812" rule="NPathComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="Recipient" method="setPhone" priority="3">
+      The method setPhone() has an NPath complexity of 270. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="826" endline="846" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setMobile" priority="3">
+      The method setMobile() has a Cyclomatic Complexity of 14. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="826" endline="846" rule="NPathComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#npathcomplexity" class="Recipient" method="setMobile" priority="3">
+      The method setMobile() has an NPath complexity of 270. The configured NPath complexity threshold is 200.
+    </violation>
+    <violation beginline="860" endline="876" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Recipient" method="setEMail" priority="3">
+      The method setEMail() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ResponseItem.php">
+    <violation beginline="68" endline="84" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="ResponseItem" method="setItemID" priority="3">
+      The method setItemID() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/Sending.php">
+    <violation beginline="136" endline="152" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="Sending" method="setSendingID" priority="3">
+      The method setSendingID() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ServiceCodeAttributes.php">
+    <violation beginline="13" endline="421" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="ServiceCodeAttributes" priority="3">
+      The class ServiceCodeAttributes has an overall complexity of 63 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="121" endline="134" rule="ExcessiveParameterList" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveparameterlist" class="ServiceCodeAttributes" method="__construct" priority="3">
+      The method __construct has 10 parameters. Consider reducing the number of parameters to less than 10.
+    </violation>
+    <violation beginline="196" endline="212" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="ServiceCodeAttributes" method="setFreeText" priority="3">
+      The method setFreeText() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="308" endline="324" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="ServiceCodeAttributes" method="setDeliveryPlace" priority="3">
+      The method setDeliveryPlace() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/SingleBarcodesCustomer.php">
+    <violation beginline="13" endline="382" rule="ExcessiveClassComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#excessiveclasscomplexity" class="SingleBarcodesCustomer" priority="3">
+      The class SingleBarcodesCustomer has an overall complexity of 88 which is very high. The configured complexity threshold is 50.
+    </violation>
+    <violation beginline="135" endline="151" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setName1" priority="3">
+      The method setName1() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="165" endline="181" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setName2" priority="3">
+      The method setName2() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="195" endline="211" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setStreet" priority="3">
+      The method setStreet() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="225" endline="241" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setPOBox" priority="3">
+      The method setPOBox() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="255" endline="275" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setZIP" priority="3">
+      The method setZIP() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="289" endline="305" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setCity" priority="3">
+      The method setCity() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+    <violation beginline="345" endline="361" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="SingleBarcodesCustomer" method="setDomicilePostOffice" priority="3">
+      The method setDomicilePostOffice() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+  <file name="/Users/sylvainraye/Sites/git/swisspost/src/StructType/ValidateCombinationItem.php">
+    <violation beginline="70" endline="86" rule="CyclomaticComplexity" ruleset="Code Size Rules" package="Diglin\Swisspost\StructType" externalInfoUrl="http://phpmd.org/rules/codesize.html#cyclomaticcomplexity" class="ValidateCombinationItem" method="setItemID" priority="3">
+      The method setItemID() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+    </violation>
+  </file>
+</pmd>

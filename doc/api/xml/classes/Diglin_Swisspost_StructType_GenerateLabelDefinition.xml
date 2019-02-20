@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="Diglin\Swisspost\StructType" name="GenerateLabelDefinition" abstract="false" final="false" start="13" end="173">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="GenerateLabelDefinition.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateLabelDefinition.php" size="5751" time="2019-01-13T13:17:08+01:00" unixtime="1547381828" sha1="17d7e6cd71ab5049038d2710e802603f3631373a" relative="StructType/GenerateLabelDefinition.php"/>
+  <docblock>
+    <description compact="This class stands for GenerateLabelDefinition StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="Diglin\Swisspost\StructType\LabelDefinition" namespace="Diglin\Swisspost\StructType" name="LabelDefinition"/>
+  <member name="PrintAddresses" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The PrintAddresses"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ImageFileType" visibility="public" static="false" line="27">
+    <docblock>
+      <description compact="The ImageFileType Meta informations extracted from the WSDL - documentation: Defines valid formats of images.">- pattern: [a-zA-Z,0-9]{1,5}</description>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ImageResolution" visibility="public" static="false" line="32">
+    <docblock>
+      <description compact="The ImageResolution"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="PrintPreview" visibility="public" static="false" line="37">
+    <docblock>
+      <description compact="The PrintPreview"/>
+      <var type="object">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="50" end="57" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for GenerateLabelDefinition"/>
+      <uses value="GenerateLabelDefinition::setPrintAddresses()"/>
+      <uses value="GenerateLabelDefinition::setImageFileType()"/>
+      <uses value="GenerateLabelDefinition::setImageResolution()"/>
+      <uses value="GenerateLabelDefinition::setPrintPreview()"/>
+      <param type="string" variable="$printAddresses"/>
+      <param type="string" variable="$imageFileType"/>
+      <param type="int" variable="$imageResolution"/>
+      <param type="object" variable="$printPreview">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="printAddresses" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="imageFileType" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="imageResolution" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="printPreview" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="getPrintAddresses" start="62" end="65" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PrintAddresses value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPrintAddresses" start="74" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PrintAddresses value"/>
+      <uses value="\Diglin\Swisspost\EnumType\PrintAddressesType::valueIsValid()"/>
+      <uses value="\Diglin\Swisspost\EnumType\PrintAddressesType::getValidValues()"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="string" variable="$printAddresses"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="printAddresses" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: enumeration" line="76"/>
+    </inline>
+  </method>
+  <method name="getImageFileType" start="87" end="90" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ImageFileType value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setImageFileType" start="96" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ImageFileType value"/>
+      <param type="string" variable="$imageFileType"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="imageFileType" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: pattern" line="98"/>
+      <comment value="validation for constraint: string" line="102"/>
+    </inline>
+  </method>
+  <method name="getImageResolution" start="113" end="116" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get ImageResolution value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\int|null" namespace="Diglin\Swisspost\StructType" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setImageResolution" start="122" end="130" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set ImageResolution value"/>
+      <param type="int" variable="$imageResolution"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="imageResolution" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: int" line="124"/>
+    </inline>
+  </method>
+  <method name="getPrintPreview" start="135" end="138" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get PrintPreview value"/>
+      <return type="object">
+        <type full="Diglin\Swisspost\StructType\bool|null" namespace="Diglin\Swisspost\StructType" name="bool|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setPrintPreview" start="144" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set PrintPreview value"/>
+      <param type="object" variable="$printPreview">
+        <type full="Diglin\Swisspost\StructType\bool" namespace="Diglin\Swisspost\StructType" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="printPreview" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="validation for constraint: boolean" line="146"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="161" end="164" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="169" end="172" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+  <extenders>
+    <extender full="Diglin\Swisspost\StructType\GenerateLabelResponseDefinition" namespace="Diglin\Swisspost\StructType" name="GenerateLabelResponseDefinition"/>
+  </extenders>
+  <parent full="Diglin\Swisspost\StructType\LabelDefinition" namespace="Diglin\Swisspost\StructType" name="LabelDefinition">
+    <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+    <member name="LabelLayout" visibility="public" static="false" line="22">
+      <docblock>
+        <description compact="The LabelLayout Meta informations extracted from the WSDL - documentation: Defines valid layouts.">- pattern: [a-zA-Z,0-9]{2}</description>
+        <var type="string"/>
+      </docblock>
+    </member>
+    <constructor name="__construct" start="28" end="32" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Constructor method for LabelDefinition"/>
+        <uses value="LabelDefinition::setLabelLayout()"/>
+        <param type="string" variable="$labelLayout"/>
+      </docblock>
+      <parameter name="labelLayout" byreference="false" type="{unknown}" default="NULL"/>
+    </constructor>
+    <method name="getLabelLayout" start="37" end="40" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Get LabelLayout value"/>
+        <return type="object">
+          <type full="Diglin\Swisspost\StructType\string|null" namespace="Diglin\Swisspost\StructType" name="string|null"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="setLabelLayout" start="46" end="58" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set LabelLayout value"/>
+        <param type="string" variable="$labelLayout"/>
+        <return type="object">
+          <type full="\Diglin\Swisspost\StructType\LabelDefinition" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition"/>
+        </return>
+      </docblock>
+      <parameter name="labelLayout" byreference="false" type="{unknown}" default="NULL"/>
+      <inline>
+        <comment value="validation for constraint: pattern" line="48"/>
+        <comment value="validation for constraint: string" line="52"/>
+      </inline>
+    </method>
+    <method name="__set_state" start="67" end="70" abstract="false" final="false" static="true" visibility="public">
+      <docblock>
+        <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+        <see value="AbstractStructBase::__set_state()"/>
+        <uses value="AbstractStructBase::__set_state()"/>
+        <param description="the exported values" type="array" variable="$array"/>
+        <return type="object">
+          <type full="\Diglin\Swisspost\StructType\LabelDefinition" namespace="\Diglin\Swisspost\StructType" name="LabelDefinition"/>
+        </return>
+      </docblock>
+      <parameter name="array" byreference="false" type="array"/>
+    </method>
+    <method name="__toString" start="75" end="78" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Method returning the class name"/>
+        <return description="__CLASS__" type="string"/>
+      </docblock>
+    </method>
+  </parent>
+</class>

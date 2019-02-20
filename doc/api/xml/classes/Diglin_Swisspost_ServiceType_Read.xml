@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\ServiceType\Read" namespace="Diglin\Swisspost\ServiceType" name="Read" abstract="false" final="false" start="13" end="147">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType" file="Read.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/ServiceType/Read.php" size="5988" time="2019-01-11T00:06:02+01:00" unixtime="1547161562" sha1="68b1e98dd2686a42a9099b803d474a07755b6d47" relative="ServiceType/Read.php"/>
+  <docblock>
+    <description compact="This class stands for Read ServiceType"/>
+    <subpackage value="Services"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractSoapClientBase" namespace="WsdlToPhp\PackageBase" name="AbstractSoapClientBase" unresolved="true"/>
+  <method name="ReadServiceGroups" start="24" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadServiceGroups"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroups" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroups"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadServiceGroupsResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadServiceGroups" namespace="Diglin\Swisspost\StructType" name="ReadServiceGroups"/>
+    </parameter>
+  </method>
+  <method name="ReadBasicServices" start="43" end="52" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadBasicServices"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadBasicServices" namespace="\Diglin\Swisspost\StructType" name="ReadBasicServices"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadBasicServicesResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadBasicServicesResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadBasicServices" namespace="Diglin\Swisspost\StructType" name="ReadBasicServices"/>
+    </parameter>
+  </method>
+  <method name="ReadAllowedServicesByFrankingLicense" start="63" end="72" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadAllowedServicesByFrankingLicense"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="\Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicenseResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicenseResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicense" namespace="Diglin\Swisspost\StructType" name="ReadAllowedServicesByFrankingLicense"/>
+    </parameter>
+  </method>
+  <method name="ReadAdditionalServices" start="82" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadAdditionalServices"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServicesResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadAdditionalServicesResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadAdditionalServices" namespace="Diglin\Swisspost\StructType" name="ReadAdditionalServices"/>
+    </parameter>
+  </method>
+  <method name="ReadDeliveryInstructions" start="101" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadDeliveryInstructions"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructions" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructions"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadDeliveryInstructionsResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadDeliveryInstructions" namespace="Diglin\Swisspost\StructType" name="ReadDeliveryInstructions"/>
+    </parameter>
+  </method>
+  <method name="ReadLabelLayouts" start="120" end="129" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method to call the operation originally named ReadLabelLayouts"/>
+      <uses value="AbstractSoapClientBase::getSoapClient()"/>
+      <uses value="AbstractSoapClientBase::setResult()"/>
+      <uses value="AbstractSoapClientBase::getResult()"/>
+      <uses value="AbstractSoapClientBase::saveLastError()"/>
+      <param type="object" variable="$body">
+        <type full="\Diglin\Swisspost\StructType\ReadLabelLayouts" namespace="\Diglin\Swisspost\StructType" name="ReadLabelLayouts"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadLabelLayoutsResponse|bool" namespace="\Diglin\Swisspost\StructType" name="ReadLabelLayoutsResponse|bool"/>
+      </return>
+    </docblock>
+    <parameter name="body" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\ReadLabelLayouts" namespace="Diglin\Swisspost\StructType" name="ReadLabelLayouts"/>
+    </parameter>
+  </method>
+  <method name="getResult" start="135" end="138" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Returns the result"/>
+      <see value="AbstractSoapClientBase::getResult()"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\ReadAdditionalServicesResponse|\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicenseResponse|\Diglin\Swisspost\StructType\ReadBasicServicesResponse|\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse|\Diglin\Swisspost\StructType\ReadLabelLayoutsResponse|\Diglin\Swisspost\StructType\ReadServiceGroupsResponse" namespace="\Diglin\Swisspost\StructType\ReadAdditionalServicesResponse|\Diglin\Swisspost\StructType\ReadAllowedServicesByFrankingLicenseResponse|\Diglin\Swisspost\StructType\ReadBasicServicesResponse|\Diglin\Swisspost\StructType\ReadDeliveryInstructionsResponse|\Diglin\Swisspost\StructType\ReadLabelLayoutsResponse|\Diglin\Swisspost\StructType" name="ReadServiceGroupsResponse"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="__toString" start="143" end="146" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

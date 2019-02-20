@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\AdditionalINFOS" namespace="Diglin\Swisspost\StructType" name="AdditionalINFOS" abstract="false" final="false" start="15" end="94">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="AdditionalINFOS.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/AdditionalINFOS.php" size="3454" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="625b61b6781c75133298c1fb443a45861ab47582" relative="StructType/AdditionalINFOS.php"/>
+  <docblock>
+    <description compact="This class stands for AdditionalINFOS StructType Meta informations extracted from the WSDL - documentation: ehem. REC_Data bei V2.1 und 2.0"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="AdditionalData" visibility="public" static="false" line="23">
+    <docblock>
+      <description compact="The AdditionalData Meta informations extracted from the WSDL - maxOccurs: 50"/>
+      <var type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="29" end="33" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for AdditionalINFOS"/>
+      <uses value="AdditionalINFOS::setAdditionalData()"/>
+      <param type="array" variable="$additionalData" of="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </param>
+    </docblock>
+    <parameter name="additionalData" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="getAdditionalData" start="38" end="41" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get AdditionalData value"/>
+      <return type="array" of="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData[]|nu" namespace="\Diglin\Swisspost\StructType" name="AdditionalData[]|nu"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setAdditionalData" start="48" end="58" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set AdditionalData value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="array" variable="$additionalData" of="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalINFOS" namespace="\Diglin\Swisspost\StructType" name="AdditionalINFOS"/>
+      </return>
+    </docblock>
+    <parameter name="additionalData" byreference="false" type="array" default=""/>
+  </method>
+  <method name="addToAdditionalData" start="65" end="73" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add item to AdditionalData value"/>
+      <throws type="object">
+        <type full="\InvalidArgumentException" namespace="" name="InvalidArgumentException"/>
+      </throws>
+      <param type="object" variable="$item">
+        <type full="\Diglin\Swisspost\StructType\AdditionalData" namespace="\Diglin\Swisspost\StructType" name="AdditionalData"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalINFOS" namespace="\Diglin\Swisspost\StructType" name="AdditionalINFOS"/>
+      </return>
+    </docblock>
+    <parameter name="item" byreference="false" type="object">
+      <type full="Diglin\Swisspost\StructType\AdditionalData" namespace="Diglin\Swisspost\StructType" name="AdditionalData"/>
+    </parameter>
+    <inline>
+      <comment value="validation for constraint: itemType" line="67"/>
+    </inline>
+  </method>
+  <method name="__set_state" start="82" end="85" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\AdditionalINFOS" namespace="\Diglin\Swisspost\StructType" name="AdditionalINFOS"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="90" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>

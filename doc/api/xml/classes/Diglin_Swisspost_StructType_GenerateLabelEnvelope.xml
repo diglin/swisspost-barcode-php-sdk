@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Diglin\Swisspost\StructType\GenerateLabelEnvelope" namespace="Diglin\Swisspost\StructType" name="GenerateLabelEnvelope" abstract="false" final="false" start="13" end="120">
+  <file path="/Users/sylvainraye/Sites/git/swisspost/src/StructType" file="GenerateLabelEnvelope.php" realpath="/Users/sylvainraye/Sites/git/swisspost/src/StructType/GenerateLabelEnvelope.php" size="3753" time="2019-01-11T00:06:01+01:00" unixtime="1547161561" sha1="d85f20f5ee4090a210e7cbed751d00bb08a0fb3b" relative="StructType/GenerateLabelEnvelope.php"/>
+  <docblock>
+    <description compact="This class stands for GenerateLabelEnvelope StructType"/>
+    <subpackage value="Structs"/>
+    <date value="2019/01/11"/>
+    <codeversion value="1.0.0"/>
+  </docblock>
+  <extends full="WsdlToPhp\PackageBase\AbstractStructBase" namespace="WsdlToPhp\PackageBase" name="AbstractStructBase" unresolved="true"/>
+  <member name="LabelDefinition" visibility="public" static="false" line="19">
+    <docblock>
+      <description compact="The LabelDefinition"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="FileInfos" visibility="public" static="false" line="24">
+    <docblock>
+      <description compact="The FileInfos"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelFileInfos" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelFileInfos"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="Data" visibility="public" static="false" line="29">
+    <docblock>
+      <description compact="The Data"/>
+      <var type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelData" namespace="\Diglin\Swisspost\StructType" name="LabelData"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="39" end="45" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor method for GenerateLabelEnvelope"/>
+      <uses value="GenerateLabelEnvelope::setLabelDefinition()"/>
+      <uses value="GenerateLabelEnvelope::setFileInfos()"/>
+      <uses value="GenerateLabelEnvelope::setData()"/>
+      <param type="object" variable="$labelDefinition">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </param>
+      <param type="object" variable="$fileInfos">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelFileInfos" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelFileInfos"/>
+      </param>
+      <param type="object" variable="$data">
+        <type full="\Diglin\Swisspost\StructType\LabelData" namespace="\Diglin\Swisspost\StructType" name="LabelData"/>
+      </param>
+    </docblock>
+    <parameter name="labelDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+    </parameter>
+    <parameter name="fileInfos" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateLabelFileInfos" namespace="Diglin\Swisspost\StructType" name="GenerateLabelFileInfos"/>
+    </parameter>
+    <parameter name="data" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelData" namespace="Diglin\Swisspost\StructType" name="LabelData"/>
+    </parameter>
+  </constructor>
+  <method name="getLabelDefinition" start="50" end="53" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get LabelDefinition value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition|null" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setLabelDefinition" start="59" end="63" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set LabelDefinition value"/>
+      <param type="object" variable="$labelDefinition">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelEnvelope"/>
+      </return>
+    </docblock>
+    <parameter name="labelDefinition" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateLabelDefinition" namespace="Diglin\Swisspost\StructType" name="GenerateLabelDefinition"/>
+    </parameter>
+  </method>
+  <method name="getFileInfos" start="68" end="71" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get FileInfos value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelFileInfos|null" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelFileInfos|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setFileInfos" start="77" end="81" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set FileInfos value"/>
+      <param type="object" variable="$fileInfos">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelFileInfos" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelFileInfos"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelEnvelope"/>
+      </return>
+    </docblock>
+    <parameter name="fileInfos" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\GenerateLabelFileInfos" namespace="Diglin\Swisspost\StructType" name="GenerateLabelFileInfos"/>
+    </parameter>
+  </method>
+  <method name="getData" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get Data value"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\LabelData|null" namespace="\Diglin\Swisspost\StructType" name="LabelData|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="setData" start="95" end="99" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set Data value"/>
+      <param type="object" variable="$data">
+        <type full="\Diglin\Swisspost\StructType\LabelData" namespace="\Diglin\Swisspost\StructType" name="LabelData"/>
+      </param>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelEnvelope"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="object" default="NULL">
+      <type full="Diglin\Swisspost\StructType\LabelData" namespace="Diglin\Swisspost\StructType" name="LabelData"/>
+    </parameter>
+  </method>
+  <method name="__set_state" start="108" end="111" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Method called when an object has been exported with var_export() functions It allows to return an object instantiated with the values"/>
+      <see value="AbstractStructBase::__set_state()"/>
+      <uses value="AbstractStructBase::__set_state()"/>
+      <param description="the exported values" type="array" variable="$array"/>
+      <return type="object">
+        <type full="\Diglin\Swisspost\StructType\GenerateLabelEnvelope" namespace="\Diglin\Swisspost\StructType" name="GenerateLabelEnvelope"/>
+      </return>
+    </docblock>
+    <parameter name="array" byreference="false" type="array"/>
+  </method>
+  <method name="__toString" start="116" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Method returning the class name"/>
+      <return description="__CLASS__" type="string"/>
+    </docblock>
+  </method>
+</class>
