@@ -1,7 +1,7 @@
 {
   "name": "diglin/swisspost-barcode-php-sdk",
   "description": "PHP SDK for the use of SwissPost Barcode Wen Services",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "authors": [
     {
