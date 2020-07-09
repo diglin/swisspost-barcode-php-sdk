@@ -111,8 +111,8 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
             ->setName1('Rayé')
 //                ->setName2('')
 //                ->setName3('')
-            ->setStreet('rütistrasse')
-            ->setHouseNo('14')
+            ->setStreet('Ifangstrasse')
+            ->setHouseNo('6')
 //                ->setFloorNo('')
             ->setCountry('CH')
             ->setAddressSuffix('')
@@ -124,7 +124,7 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
 //                ->setPOBox('')
             ->setPhone('041 12 345 67 89')
             ->setMobile('041 12 345 67 89')
-            ->setCity('Zurich')
+            ->setCity('Schlieren')
             ->setZIP('8952');
 
         return $recipient;
@@ -165,7 +165,7 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
 
         $attributes = new ServiceCodeAttributes();
         $attributes
-            ->setPRZL(['APLUS'])
+            ->setPRZL(['ECO']) //APLUS
 //                ->setDeliveryDate('')
 //                ->setDeliveryPlace('')
 //                ->setDimensions('')
@@ -236,6 +236,13 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
             $this->assertTrue(($errors[0] instanceof MessageType), 'errors is not type of \Diglin\Swisspost\StructType\MessageType');
             $this->assertContains('E2026', $errors[0]->getCode(), 'Error E2026 expected. Franking licence issue');
 
+            if ($item->getBarcodes()) {
+                @mkdir('output');
+                foreach ($item->getBarcodes() as $barcode) {
+                    file_put_contents('output/' . uniqid('barcode_') . '.png', $barcode);
+                }
+            }
+
         } catch (\SoapFault $e) {
             switch ($e->faultcode) {
                 case 'HTTP':
@@ -254,7 +261,7 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
 
         $attributes = new ServiceCodeAttributes();
         $attributes
-            ->setPRZL(['PRI'])// , 'ZAW3213'
+            ->setPRZL(['ECO'])// , 'ZAW3213'
             ->setProClima(true)
 //                ->setDeliveryDate('')
 //                ->setDeliveryPlace('')
@@ -336,7 +343,12 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
 
             /* @var $item LabelResponseItem */
             $item = array_shift($items);
-            $this->assertStringStartsWith('99', $item->getIdentCode(), 'No identification code found');
+            $this->assertStringStartsWith('99', ($item->getIdentCode() ?: ''), 'No identification code found');
+
+            if ($item->getLabel()) {
+                @mkdir('output');
+                file_put_contents('output/' . uniqid('label_') . '.png', $item->getLabel());
+            }
 
         } catch (\SoapFault $e) {
             switch ($e->faultcode) {
@@ -374,6 +386,11 @@ class GenerateTest extends \PHPUnit\Framework\TestCase
 
             $this->assertStringStartsWith('98', $data->getDeliveryNoteRef(), 'No identification code found');
             $this->assertStringStartsWith('PNG', $data->getBarcodeDefinition()->getImageFileType(), 'ImageFileType does not match');
+
+            if ($data->getBarcode()) {
+                @mkdir('output');
+                file_put_contents('output/' . uniqid('barcode_') . '.png', $data->getBarcode());
+            }
 
         } catch (\SoapFault $e) {
             switch ($e->faultcode) {
