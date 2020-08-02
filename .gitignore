@@ -1,2 +1,4 @@
 vendor
 /test/config/parameters.php
+test/ServiceType/output/*
+!test/ServiceType/output/.gitkeep
