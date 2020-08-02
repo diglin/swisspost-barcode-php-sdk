@@ -8,7 +8,6 @@
       "email": "support@diglin.com"
     }
   ],
-  "version": "1.0.3",
   "type": "library",
   "require": {
     "php": ">=5.3.3",
