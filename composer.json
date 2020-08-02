@@ -12,7 +12,8 @@
   "require": {
     "php": ">=5.3.3",
     "ext-soap": "*",
-    "wsdltophp/packagebase": "~2.0"
+    "wsdltophp/packagebase": "~2.0",
+    "symfony/thanks": "^1.2"
   },
   "require-dev": {
     "phpunit/phpunit": "^7.5",
